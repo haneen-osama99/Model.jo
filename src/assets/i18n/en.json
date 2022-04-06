@@ -1,0 +1,19 @@
+{
+    "navBar": {
+        "HOME": "HOME",
+        "ABOUT US": "ABOUT US",
+        "OUR PORTFOLIO": "OUR PORTFOLIO",
+        "SERVICES": "SERVICES",
+        "PARTNERS": "PARTNERS",
+        "CONTACT US": "CONTACT US"
+    },
+    "hero": {
+        "headingOne": "Incentives offered in Jordan IT sector",
+        "headingTwo": "We are distinguished by providing integrated services for all your projects needs",
+        "headingThree": "Start your technical team in Amman - Jordan",
+        "button": "Get started today"
+    },
+    "aboutUs": {
+        "ABOUT US":"ABOUT US"
+    }
+}
