@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  templateUrl: './Home.component.html',
+  styleUrls: ['./Home.component.scss' ],
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class HomeComponent implements OnInit {

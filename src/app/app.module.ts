@@ -8,6 +8,9 @@ import { HeroComponent } from './Home/hero/hero.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ContactUsComponent } from './Home/contact-us/contact-us.component';
+import { PartnersComponent } from './Home/partners/partners.component';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -17,7 +20,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     HomeComponent,
     AboutusComponent,
-    HeroComponent
+    HeroComponent,
+    PartnersComponent,
+    ContactUsComponent
+    
   ],
   imports: [
     BrowserModule,
