@@ -328,7 +328,7 @@ h6 {
   height: 80px;
   z-index: 1;
   background-repeat: no-repeat;
-  background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png);
+  /* background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png); */
 }
 #services .pattern-2 {
   position: absolute;
@@ -347,7 +347,7 @@ h6 {
   width: 710px;
   height: 570px;
   background-repeat: no-repeat;
-  background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-7.png);
+  /* background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-7.png); */
   opacity: 0.5;
 }
 #services .section-describtion {
@@ -438,7 +438,7 @@ h6 {
   height: 80px;
   z-index: 1;
   background-repeat: no-repeat;
-  background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png);
+  /* background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png); */
 }
 #our-portfolio .pattern-2 {
   position: absolute;
@@ -457,7 +457,7 @@ h6 {
   width: 710px;
   height: 570px;
   background-repeat: no-repeat;
-  background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-7.png);
+  /* background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-7.png); */
   opacity: 0.5;
 }
 #our-portfolio .section-describtion {
@@ -551,7 +551,7 @@ h6 {
   background-color: #e6f2ff;
 }
 #free-consultaion.bgimg-parallax {
-  background-image: url(../img/img_parallax2.jpg);
+  /* background-image: url(../img/img_parallax2.jpg); */
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -563,11 +563,7 @@ h6 {
   color: #fff;
 }
 
-#our-partner .item img {
-  /*border: 1px solid #ccc;
-  opacity: 0.4;
-  padding: 20px;*/
-}
+
 #our-partner .owl-carousel.owl-theme .owl-dots .owl-dot span {
   background: #c4c4cc none repeat scroll 0 0;
   display: block;
@@ -803,7 +799,7 @@ section.footer .footer-widgets .footer-widget {
   transition: color 0.15s;
   -moz-osx-font-smoothing: grayscale;
   border-radius: 50%;
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
 }
 .social-links li a:before {
   content: "";
@@ -912,7 +908,7 @@ section.footer .footer-widgets .footer-widget {
   width: 80px;
   height: 80px;
   background-repeat: no-repeat;
-  background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png);
+  /* background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png); */
 }
 .aboutinfo .pattern-2 {
   position: absolute;
@@ -955,6 +951,7 @@ section.footer .footer-widgets .footer-widget {
   padding-bottom: 64px;
   padding-top: 64px;
 }
+
 .aboutinfo .about-quote blockquote {
   border-left: 0 dashed;
   color: #999;
@@ -987,7 +984,7 @@ section.footer .footer-widgets .footer-widget {
   height: 143px;
   background-repeat: no-repeat;
   border-top-left-radius: 10px;
-  background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-15.png);
+  /* background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-15.png); */
 }
 .facts-area .pattern .pattern-2 {
   position: absolute;
@@ -997,7 +994,7 @@ section.footer .footer-widgets .footer-widget {
   height: 100%;
   background-repeat: no-repeat;
   z-index: 1;
-  background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-16.png);
+  /* background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-16.png); */
 }
 .facts-area.overlay {
   position: relative;
@@ -1088,7 +1085,7 @@ section.footer .footer-widgets .footer-widget {
   display: table;
   width: 100%;
   min-height: 500px;
-  background-image: url(../img/allTeam.jpg);
+  /* background-image: url(../img/allTeam.jpg); */
   background-repeat: no-repeat;
   background-position: center top;
 }

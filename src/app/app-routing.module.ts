@@ -7,7 +7,7 @@ import { AboutusComponent } from './Home/aboutus/aboutus.component';
 
 const routes: Routes = [
   {
-    path:"/",
+    path:"",
     component:HomeComponent
   },
   {
@@ -19,7 +19,8 @@ const routes: Routes = [
     component:AboutusComponent
   },
   {
-    path:"/" , component:ContactUsComponent
+    path:"ContactUs",
+    component:ContactUsComponent
   }
 ];
 
