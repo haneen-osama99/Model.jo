@@ -16,4 +16,11 @@ export class AppService {
     getOurDate() {
         return this.http.get("./assets/data/data-json/our.json");
     }
+    getHero(){
+        return this.http.get('./assets/data/data-json/hero.json')
+      }
+      getabout(){
+        return this.http.get('./assets/data/data-json/aboutus.json')
+    
+      }
 }

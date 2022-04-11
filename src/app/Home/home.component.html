@@ -1,6 +1,60 @@
 <!-- <div><button (click)="detectLang()" >ar and en</button></div> -->
-
-<app-our  [islang]="isEnlang"></app-our>
-<app-service [islang]="isEnlang"></app-service>
-<app-partners></app-partners>
-<app-contact-us></app-contact-us>
+    <header class="jo-header">
+        <div class="topbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand"> <img src="assets/data/img/model-logo.png" alt=""
+                                class="d-inline-block align-text-top"> </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page"
+                                        href="">{{'navBar.HOME'|translate}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about-us">{{'navBar.ABOUT US'|translate}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#our-portfolio">{{'navBar.OUR PORTFOLIO'|translate}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">{{'navBar.SERVICES'|translate}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#our-partner">{{'navBar.PARTNERS'|translate}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact-us">{{'navBar.CONTACT US'|translate}}</a>
+                                </li>
+                            </ul>
+                            <ul class="get-quote-lang d-flex">
+                                <li class="btn-lang">
+                                    <!-- <button  class="switch-lang" (click)="detectLang()"  >عربي</button> -->
+                                    <button (click)="detectLang()">{{'navBar.lang'|translate}}</button>
+                                   
+                                </li>
+                          
+                            </ul>
+                            <!-- <select (change)="changeLanguge($event)">
+                                <option value="ar">Arabic</option>
+                                <option value="en">English</option>
+                                </select> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <app-hero [islang]="isEnLang"></app-hero>
+    <aboutus  [islang]="isEnLang"></aboutus>
+    <app-our  [islang]="isEnLang"></app-our>
+    <app-service [islang]="isEnLang"></app-service>
+    <app-partners></app-partners>
+    <app-contact-us></app-contact-us>

@@ -1,0 +1,57 @@
+
+<section id="about-us" class="aboutinfo about-area py-5 py-md-6">
+    <div class="pattern-layer">
+        <div class="pattern-1" style="background-image: url(assets/data/img/pattern-5.png);"></div>
+        <div class="pattern-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.5 418.9" style="
+        fill: #f7f8f9;
+    ">
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1"
+                            d="M266 402l-28 17L76 138a89 89 0 0132-122l29-16 162 281a89 89 0 01-33 121zM473 402l-28 17-163-281a89 89 0 0133-122l28-16 163 281a89 89 0 01-33 121z">
+                        </path>
+                        <path d="M157 402H0l85-121 72 121z"></path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-title text-center mb-4">
+            <h1 style="line-height: 1.2;">
+                {{'aboutUs.ABOUTUS'|translate}}
+            </h1>
+        </div>
+        <div class="line-sperator mx-auto"></div>
+        <div class="container" *ngFor="let item of data">
+            <div class="row" >
+                <div class="col-md-6 col-lg-6 " style="width: 57%;">
+                    <div class="about-left">
+                        <h2 class="wow animate__animated animate__fadeInDown" data-wow-duration="2s"
+                            data-wow-delay="0s" style="width: 100%;">
+                            {{isEnLang?item.subTitleEn:item.subTitleAr}}
+                        </h2>
+                        <!-- <figure class="about-thumb wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.4s"> -->
+                            <img src="{{item.aboutUsImg}}" >
+                            <!-- <figcaption class="wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                                data-wow-delay="0.8s"></figcaption>
+                        </figure> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" style="width: 43%;">
+                    <div class="about-quote wow animate__animated animate__fadeInLeft " data-wow-duration="2s"
+                        data-wow-delay="1.4s">
+                        <blockquote>
+                            {{isEnLang?item.paragraphOneEn:item.paragraphOneAr}}
+                        </blockquote>
+                        <blockquote>
+                            {{isEnLang?item.paragraphTwoEn:item.paragraphTwoAr}}
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

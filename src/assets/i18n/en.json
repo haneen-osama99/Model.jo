@@ -33,5 +33,31 @@
 
     "language.ar":"Arabic",
     "language.en":"English"
-}
+},
+    "navBar": {
+        "HOME": "HOME",
+        "ABOUT US": "ABOUT US",
+        "OUR PORTFOLIO": "OUR PORTFOLIO",
+        "SERVICES": "SERVICES",
+        "PARTNERS": "PARTNERS",
+        "CONTACT US": "CONTACT US",
+        "lang":"عربي"
+    },
+    "hero": {
+        "headingOne": "Incentives offered in Jordan IT sector",
+        "descriptionOne":"0% sales tax on IT services ",
+        "subTitleOne":"0% customs duties",
+        "subTitleTwo":" 0% export income tax",
+        "descriptionTwo": "We provide you with a comfortable and distinct technical environment with all the necessary requirements to communicate with your team easily",
+        "headingTwo": "We are distinguished by providing integrated services for all your projects needs",
+        "headingThree": "Start your technical team in Amman - Jordan",
+        "descriptionThree":"ICT Graduates– on yearly basis; on average of 4.3 thousand ICT university students graduates from universities with 95% BA degrees, 3% masters degrees, and 2%deploma degree.",
+        "button": "Get started today"
+    },
+    "aboutUs": {
+        "ABOUTUS":"ABOUT US",
+        "subTitle": "Experience and knowledge in achieving ambitions in a modern, creative and unique fashion with golden touches",
+        "paragraphOne":"Model Business Solutions (Model) was established in light of the growing requirements of the information technology sector in the Middle East. The company relies on international standards in the implementation of its technical projects, to become a clear footprint in the sector. To be one of the fastest growing companies in the field of information technology and technical consultancy.Where the company seeks to attract a selection of specialists, and the best scientific and practical expertise in information technology to form its work team.",
+        "paragraphTwo":" Since its inception in 2018, Model Business Solutions (Model) has developed local technical expertise with international standards to provide technical and advisory solutions to a large number of public and private sectors in the Middle East."
+    }
 }

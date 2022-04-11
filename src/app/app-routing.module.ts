@@ -1,16 +1,33 @@
+import { HomeComponent } from './Home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactUsComponent } from './home/contact-us/contact-us.component';
-import { HomeComponent } from './home/home.component';
+import { ContactUsComponent } from './Home/contact-us/contact-us.component';
+import { HeroComponent } from './Home/hero/hero.component';
+import { AboutusComponent } from './Home/aboutus/aboutus.component';
 
 const routes: Routes = [
-  // {path:"/" , component:HomeComponent} ,
-  // {path:"/" , component:ContactUsComponent} ,
-
+  {
+    path:"",
+    component:HomeComponent
+  },
+  {
+    path:"heroslider",
+    component:HeroComponent
+  },
+  {
+    path:"aboutus",
+    component:AboutusComponent
+  },
+  {
+    path:"ContactUs",
+    component:ContactUsComponent
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+  
+ }
