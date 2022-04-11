@@ -1,197 +1,30 @@
-
-    <section id="our-partner" class="py-md-6 py-5 lima ">
+    <section id="our-partner" class="py-md-6 py-5">
         <div class="container-fluid px-5 ">
             <div class="container ">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="section-title text-center">
                             <h1 style="line-height: 1.2;">
-                                Our Partners
+                                {{'partners.header'| translate}} 
                             </h1>
                         </div>
                     </div>
                     <div class="line-sperator mx-auto"></div>
-                    <div class="col-sm-12 owl-carousel-wrapper">
-                        <div id="model-owl-carousel" class="owl-carousel owl-theme owl-loaded owl-drag">
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/ACIG_Insurance.svg">
+
+                    <owl-carousel-o [options]="customOptions" #owlCar class="mb-5" >
+                        <ng-template carouselSlide *ngFor="let item of data">
+                            <div class="slide">
+                                <!-- {{'partners.img1' | json}} -->
+                             <img width="150" height="150" src="{{item.img}}">
                             </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/AL_jazira_Takaful.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/AL_ETIHAD_Insurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/Alinma_Tokio_Marine_Insurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/AlRajhi_Takaful_Insurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/Alsager_Insurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/Arabian_Shield_Insurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/GGI_Insurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/Malath_Insurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/Salama_Insurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/Tawuniya_Insurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/United_Cooperation_Assurance.svg">
-                            </div>
-                            <div class="item">
-                                <img width="150" height="150" src="../assets/data/img/clients/Wataniya_Insurance.svg">
-                            </div>
-                        </div>
-                    </div>
+                        </ng-template>
+                    </owl-carousel-o> 
                 </div>
             </div>
         </div>
     </section>
-    <section id="testimonials">
-        <div class="container-fluid p-5 ">
-            <div class="container  pb-6 overflow-hidden">
-                <div class="row h-100">
-                    <div class="col-sm-12">
-                        <div class="section-title text-center">
-                            <h1 style="line-height: 1.2;">
-                                This is why we do what we do
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="line-sperator mx-auto"></div>
-                    <div class="col-12 text-center">
-                        <div id="testimonials-carousel" class="carousel slide h-100" data-bs-ride="carousel">
-                            <!-- Bottom Carousel Indicators -->
-                            <!-- Carousel Slides / Quotes -->
-                            <!-- Quote 1 -->
-                            <div class="carousel-item active">
-                                <blockquote>
-                                    <div class="row">
-                                        <div class="col-sm-12 text-center mb-3">
-                                            <div class="img-wrapper mx-auto">
-                                                <img src="../assets/data/img/avatar0.jpg" class="img-circle">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 qoutSec mx-auto d-flex justify-content-center">
-                                            <p>A distinguished team that possesses experience and knowledge and achieves
-                                                ambitions in a modern, creative and individual fashion with golden touches
-                                            </p>
-                                            <small>
-                                                <strong>Majid Abu Ibnyah</strong><br>
-                                                CEO of DAMIN Insurance Broker
-                                            </small>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
-                            <!-- Quote 2 -->
-                            <div class="carousel-item ">
-                                <blockquote>
-                                    <div class="row">
-                                        <div class="col-sm-12 text-center mb-3">
-                                            <div class="img-wrapper mx-auto">
-                                                <img src="../assets/data/img/avatar0.jpg" class="img-circle">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 qoutSec mx-auto d-flex justify-content-center">
-                                            <p>You have been distinguished by your continuous ideas and creativity, so you
-                                                have all our greetings and sincere prayers for success.</p>
-                                            <small>
-                                                <strong>Shadi Daasan</strong><br>
-                                                DAMIN Buisness Developemnt Manager
-                                            </small>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
-                            <div class="carousel-item ">
-                                <blockquote>
-                                    <div class="row">
-                                        <div class="col-sm-12 text-center mb-3">
-                                            <div class="img-wrapper mx-auto">
-                                                <img src="../assets/data/img/avatar0.jpg" class="img-circle">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 qoutSec mx-auto d-flex justify-content-center">
-                                            <p>We thank you for your interaction with us, the speed of your response, and
-                                                your keenness on time and accuracy in the achievement. I wish you more
-                                                success</p>
-                                            <small>
-                                                <strong>Mohammed Al-Omair</strong><br>
-                                                A leader in real estate development
-                                            </small>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
-                            <div class="carousel-item ">
-                                <blockquote>
-                                    <div class="row">
-                                        <div class="col-sm-12 text-center mb-3">
-                                            <div class="img-wrapper mx-auto">
-                                                <img src="../assets/data/img/avatar0.jpg" class="img-circle">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 qoutSec mx-auto d-flex justify-content-center">
-                                            <p>Your team is creative and ambitious, and this is what motivated and
-                                                encouraged us to continue dealing with you. We wish you continued success
-                                            </p>
-                                            <small>
-                                                <strong>Abdullah Al-Omair</strong><br>
-                                                Pioneer in business development
-                                            </small>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
-                            <ol class="carousel-indicators">
-                                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="news-letter" class="py-4" style="
-    background: #f1f1f1;">
-        <div class="container">
-            <div class="Subscribe-wrapper">
-                <div class="row">
-                    <div class="col-md-4 col-12">
-                        <h5 class="h-title">Subscribe with us</h5>
-                        <p>Enter your e-mail and subscribe to our newsletter</p>
-                    </div>
-                    <div class="col-md-8 col-12">
-                        <div id="model_signup" class="m-0">
-                            <form class="d-flex justify-content-center flex-md-row flex-column">
-                                <input type="email" placeholder="Enter Email" class="mt-3 mt-md-0">
-                                <button type="submit" class="mt-3 mt-md-0 ms-0 ms-md-4" style="
-                /* margin: 0 0 0 30px!important; */ ">
-                                    SUBMIT
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    
+
+
+                

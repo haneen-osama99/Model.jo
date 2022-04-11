@@ -1,0 +1,42 @@
+[
+    {   "name_en": "Majid Abu Ibnyah",
+        "name_ar":"ماجد ابو بنية",
+    
+        "position_en": "CEO of DAMIN Insurance Broker",
+        "position_ar":"مؤسس شركة ضامن لوساطة التأمين",
+
+        "sayes_en": "A distinguished team that possesses experience and knowledge and achieves ambitions in a modern, creative and individual fashion with golden touches",
+        "sayes_ar":"فريق متميز يمتلك الخبرة والمعرفة ويحقق الطموحات بشكل عصري ابداعي منفرد بلمسات ذهبية"
+    },
+    {
+        "name_en": "shadi_Daasan",
+        "name_ar": "شادي دعسان",
+
+        "position_en": "DAMIN Buisness Developemnt Manager",
+        "position_ar": "المدير التنفيذي لوساطة التأمين",
+        
+        "sayes_en": "You have been distinguished by your continuous ideas and creativity, so you have all our greetings and sincere prayers for success.",
+        "sayes_ar":"تميزتم بأفكاركم وابداعاتكم المستمرة فلكم منا كل التحايا وخالص الدعوات بالتوفيق."
+    },
+    {
+              
+        "name_en": "Mohammed Al-Omair",
+        "name_ar": "محمد العمير",
+
+        "position_en": "A leader in real estate development",
+        "position_ar": "رائد في التطوير العقاري",
+        
+        "sayes_en": "We thank you for your interaction with us, the speed of your response, and your keenness on time and accuracy in the achievement. I wish you more success",
+        "sayes_ar":"نشكركم على تفاعلكم معنا وسرعة استجابتكم وحرصكم على الوقت والدقة في الإنجاز، اتمنى لكم المزيد من النجاح"
+    },
+    {
+        "name_en": "Abdullah Al-Omair",
+        "name_ar": "عبدالله العمير",
+
+        "position_en": "Pioneer in business development",
+        "position_ar": "رائد في تطوير الاعمال",
+        
+        "sayes_en": "Your team is creative and ambitious, and this is what motivated and encouraged us to continue dealing with you. We wish you continued success",
+        "sayes_ar":"فريقكم مبدع وطموح وهذا الأمر الذي حفزنا وشجعنا للتعامل المستمر معكم ، نتمنى لكم دوام التوفيق"
+    }
+]

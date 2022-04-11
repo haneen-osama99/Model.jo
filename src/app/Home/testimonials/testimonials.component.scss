@@ -1,0 +1,196 @@
+#testimonials {
+    padding: 0 10px 30px 10px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+#testimonials .carousel-control {
+    background: none;
+    color: #222;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+#testimonials .carousel-control .left {
+    left: -12px;
+}
+
+#testimonials .carousel-control .right {
+    right: -12px !important;
+}
+
+#testimonials .container {
+    width: 75%;
+}
+
+#testimonials .carousel-indicators {
+    top: auto;
+    bottom: -90px;
+}
+
+#testimonials .carousel-indicators button {
+    width: 15px !important;
+    height: 15px !important;
+    margin: 7px !important;
+    text-indent: -999px !important;
+    background: #c4c4cc !important;
+    border: 1px solid #fff !important;
+    border-radius: 10px !important;
+    transition: all 250ms ease-out 0s;
+    transform: scale(0.5);
+}
+
+#testimonials .carousel-indicators button.active {
+    transform: scale(1);
+    margin: 7px !important;
+    background-color: #007bfc !important;
+    transition: all 250ms ease-out 0s;
+}
+
+#testimonials .carousel-indicators button:hover {
+    background: #007bfc !important;
+    transform: scale(1);
+    opacity: 1 !important;
+    transition: all 250ms ease-out 0s;
+}
+
+#testimonials img {
+    width: 100%;
+    height: 100%;
+    border: 6px #e0e0e0 solid;
+}
+
+#testimonials .carousel-item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+#testimonials .carousel-item blockquote img {
+    margin-bottom: 10px;
+}
+
+#testimonials .carousel-item blockquote .img-wrapper {
+    max-width: 120px;
+    max-height: 120px;
+    position: relative;
+}
+
+#testimonials .carousel-item blockquote .img-wrapper:after {
+    content: "“";
+    font-family: "Fontawesome";
+    position: absolute;
+    font-size: 40pt;
+    bottom: -20px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
+
+#testimonials .carousel-item blockquote .img-circle {
+    border-radius: 50%;
+    position: relative;
+}
+
+#testimonials .carousel-item blockquote .qoutSec {
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    border-radius: 8px;
+}
+
+#testimonials .carousel-item blockquote small {
+    position: absolute;
+    bottom: -26px;
+    background-color: #f7f7f7;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@keyframes zoom-fade {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+#model_signup {
+    margin-top: 15px;
+}
+
+#model_signup input[type=email] {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    box-shadow: 0;
+    background-color: #fff;
+}
+
+#model_signup button[type=submit] {
+    margin-top: 5px;
+    transition: all 250ms ease-out 0s;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    box-shadow: 0;
+    color: #fff;
+    background: #007bfc;
+}
+
+#model_signup button[type=submit]:hover {
+    background: #007bfc;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.mx-auto {
+    max-width: 120px;
+    max-height: 120px;
+    position: relative;
+}
+
+.img-circle {
+    border-radius: 50%;
+    position: relative;
+}
+
+.mx-auto .slide_c:after {
+    content: "“";
+    font-family: "Fontawesome";
+    position: absolute;
+    font-size: 40pt;
+    bottom: -20px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
+.qoutSec {
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    border-radius: 8px;
+}
+.qoutSec small {
+    position: absolute;
+    bottom: -26px;
+    background-color: #f7f7f7;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+

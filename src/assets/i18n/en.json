@@ -1,0 +1,28 @@
+{
+    "partners": {
+        "header": "Our Partners",
+        "next": "next",
+        "prev": "prev",
+        "this_is_why_we_do": "This is why we do what we do",
+
+        "subscribe": "Subscribe with us",
+        "enter_email": "Enter your e-mail and subscribe to our newsletter",
+        "email": "Enter Email",
+        "email_submet": "submet"
+    },
+    "contact_us":{
+        "model_s":"Model Business Solutions",
+        "model_location_link":"View larger map",
+        "contact":"Contact us",
+        "Name":"Name",
+        "email":"Email",
+        "phone":"phone number",
+        "massage":"Massage",
+        "send_btn":"send",
+        "keep_in_touch":"Keep in touch",
+        "location":"Amman-jordan",
+        "office":"Office",
+        "rights":" All rights reserved for",
+        "name":"Model Business Solutions 2021"
+    }
+}

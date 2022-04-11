@@ -1,2 +1,11 @@
-<app-partners></app-partners>
-<app-contact-us></app-contact-us>
+<!-- <select name="" id="" class="form-select " (change)="changeLang($event)" >
+    <option value="en">english</option>
+    <option value="ar">arabic</option>
+</select> -->
+<!-- <button class="btn" (click)="detectLang()" >ar and en</button> -->
+
+<div [ngClass]=" isEnLang ? 'eng' : 'ar'">
+    <app-partners></app-partners>
+    <app-testimonials [islang]="isEnLang" ></app-testimonials>
+    <app-contact-us></app-contact-us>
+</div>
