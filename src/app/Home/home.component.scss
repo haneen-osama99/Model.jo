@@ -1,15 +1,12 @@
-@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
-@import '../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss';
-@import '../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss';
+ @import "bootstrap\dist\css\bootstrap.css";
+ @import '../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss';
+ @import '../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss';
 
-// @charset "UTF-8";
-/*
-model bootstrap v5.0.1 sass
-Author: Adel Shokry
-Version: 1.0
-*/
+// /*
+// model bootstrap v5.0.1 sass
+// Author: Adel Shokry
+// Version: 1.0
+// */
 h1,
 h2,
 h3,
@@ -245,3 +242,113 @@ h6 {
 .scroll-top:hover {
   background: #0059b9;
 }
+header.jo-header {
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+header.jo-header .topbar {
+  padding: 1em 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+header.jo-header .navbar-brand {
+  transition: all 0.1s linear;
+}
+header.jo-header .navbar-brand:hover {
+  transform: scale(1.1);
+  transition: all 0.1s linear;
+}
+header.jo-header .navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+header.jo-header .navbar {
+  position: relative;
+}
+header.jo-header .navbar .navbar-nav .nav-item {
+  position: relative;
+  font-size: 16px;
+  margin-right: 1rem !important;
+  margin-left: 1rem !important;
+}
+header.jo-header .navbar .navbar-nav .nav-item:hover a {
+  color: #007bfc;
+}
+header.jo-header .navbar .navbar-nav .nav-item:hover a:not(.active):before {
+  border-bottom: 3px solid #007bfc;
+  transition: all 0.2s ease;
+  transform: translateY(0px);
+  content: "";
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  opacity: 1;
+}
+header.jo-header .navbar .navbar-nav .nav-item a:before {
+  content: "";
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+header.jo-header .navbar .navbar-nav .nav-item .nav-link {
+  color: #002344;
+}
+header.jo-header .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #007bfc;
+}
+header.jo-header .navbar .navbar-nav .nav-item .nav-link.active:after {
+  border-bottom: 3px solid #007bfc;
+  content: "";
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+header.jo-header .navbar .navbar-nav .nav-item:first-child {
+  margin-left: 0 !important;
+}
+header.jo-header .navbar .navbar-nav .nav-item:last-child {
+  margin-right: 0 !important;
+}
+header.jo-header .navbar #navbarSupportedContent .get-quote-lang {
+  margin-left: 40px;
+}
+header.jo-header .navbar #navbarSupportedContent .get-quote-lang .get-quote {
+  padding: 15px 18px;
+  background: #007bfc;
+  position: relative;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff !important;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 40px;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: all 0.2s linear;
+}
+header.jo-header .navbar #navbarSupportedContent .get-quote-lang .get-quote:hover {
+  background: #005cbe;
+  transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 576px) {
+  .jo-header .navbar-brand img {
+    height: 35px !important;
+  }
+}   
+  #navbarSupportedContent {
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    margin-bottom: 20px;
+  }

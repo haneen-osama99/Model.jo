@@ -1,0 +1,179 @@
+@import "bootstrap\dist\css\bootstrap.css";
+
+
+
+/* Hero Slider  ---------------------- */
+#hero-slider {
+  position: relative;
+}
+#hero-slider .sp-slide:after {
+  background: #027bfc3b;
+  opacity: 1;
+  bottom: 0px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#hero-slider .sp-slide .sp-slide {
+  position: relative;
+}
+#hero-slider .sp-slide .hw-the-slider-content {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#hero-slider .sp-slide .hw-the-slider-container {
+  display: table;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+#hero-slider .sp-slide .hw-the-slider-captions {
+  display: table-cell;
+  margin: 0;
+  padding: 0 100px;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 1;
+}
+#hero-slider .sp-slide h2 {
+  color: #fff;
+ /* text-transform: uppercase;*/
+  font-size: 47px;
+  margin-bottom: 35px;
+  line-height: 60px;
+}
+#hero-slider .sp-slide p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 55px;
+}
+#hero-slider .sp-slide a.hw-btn {
+  background: #28cb75;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-radius: 2px;
+  padding: 15px 30px;
+  transition: background-color 1s ease 0s;
+}
+#hero-slider .sp-slide a.hw-btn:hover {
+  background: #0cb863;
+}
+#hero-slider .sp-buttons {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 15px;
+}
+#hero-slider .sp-button {
+  width: 20px;
+  height: 20px;
+  background: #fff none repeat scroll 0 0;
+  border: 0;
+  border-radius: 50%;
+  margin: 4px;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  transform: translate3d(0px, -50%, 0px) scale(0.4);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+}
+#hero-slider .sp-button:hover {
+  background: #007bfc none repeat scroll 0 0;
+  transform: translate3d(0px, -50%, 0px) scale(0.8);
+}
+#hero-slider .sp-selected-button {
+  background: #007bfc none repeat scroll 0 0;
+  transform: translate3d(0px, -50%, 0px) scale(0.8);
+}
+#hero-slider .sp-arrow {
+  width: 15px;
+  height: 22px;
+}
+
+.pt-6 {
+  padding-top: 6rem;
+}
+.sliderone{
+  position: relative;
+  height: 550px;
+  outline: 303px solid #027bfc3b;
+  outline-offset: -305px;
+}
+// .sliderone:after {
+//   background: #027bfc3b;
+//   opacity: 1;
+//   bottom: 0px;
+//   content: "";
+//   left: 0;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+// }
+h1,h2,h3{
+  position: absolute;
+  top: 41%;
+  /* margin-left: 25%; */
+  color: white;
+  font-size: 41px;
+  font-weight: 700;
+  /* line-height: 60px; */
+  /* text-align: center; */
+  left: 27%;
+}
+.Titles{
+  left: 11% !important;
+  width: 82% !important;
+  text-align: center;
+}
+.description{
+  position: absolute;
+  top: 65%;
+  color: #fff;
+  font-size: 18px;
+
+  width: 71%;
+  text-align: center;
+  left: 15%;
+}
+.desOne{
+  top: 57% !important;
+  // left: 2%;
+}
+.desTwo{
+  top: 62% !important;
+  // left: 2%;
+}
+.descriptionTwo{
+  top: 61% !important;
+    font-size: 16px !important;
+    margin-left: 1% !important;
+}
+.desthree{
+  font-size: 15px ;
+  margin-left: -2% !important;
+  text-align: center;
+}
+.btn {
+  position: absolute;
+  top: 83%;
+  left: 46%;
+}

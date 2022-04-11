@@ -1,0 +1,49 @@
+
+[
+    {
+    "ProjectImage":"../../../assets/data/img/s6.png",
+    "ProjectNameAr":"بيئة متميزة لتكنولوجيا المعلومات",
+    "PrjectNameEn":"Excellent IT environment",
+    "ProjectDescAr":"توفير المكاتب المجهزة بالكامل لفريقك مع الأجهزة التقنية والمرونة في الزيادة أو التقليل في عدد المكاتب حسب الحاجة",
+    "ProjectDescEn":"Providing fully equipped offices for your team with technical devices and the flexibility to increase or decrease the number of offices as needed"
+
+
+    },
+    {
+        "ProjectImage":"../../../assets/data/img/s5.jpg",
+        "ProjectNameAr":"تحليل الأعمال وضمان الجودة",
+        "PrjectNameEn":"Business Analysis and Quality Assurance",
+        "ProjectDescAr":" جمع المتطلبات ومراجعة الجودة و نمذجة البيانات للوصول لأنسب الطرق في تطوير الاعمال ",
+        "ProjectDescEn":"Requirements gathering, quality review And data modeling to reach the most appropriate approach in business development"
+   },
+        
+   {
+    "ProjectImage":"../../../assets/data/img/s4.jpg",
+    "ProjectNameAr":"الخدمات القانونية",
+    "PrjectNameEn":"Legal Services",
+    "ProjectDescAr":" إعداد الخدمات القانونية الكاملة لاحتياجات شركتك بما فيها الاستشارات القانونية والخدمات و تسجيل العلامات التجارية بالاضافة لصياغة العقود القانونية ",
+    "ProjectDescEn":"Prepare full legal services for your company's needs including Legal advice and services and trademark registration In addition to drafting legal contracts"
+    },
+    {
+        "ProjectImage":"../../../assets/data/img/s3.jpg",
+        "ProjectNameAr":"خدمات التوظيف و ادارة الموارد البشرية",
+        "PrjectNameEn":"Recruitment and human resource management services",
+        "ProjectDescAr":"بناء الفريق واستقطاب الكفاءات و توثيق ملفات الموظفين و متابعة إجراءات التعاقد والعقود",
+        "ProjectDescEn":"Building a team, attracting competencies, documenting employee files, and following up on contracting procedures and contracts"
+   },
+   {
+    "ProjectImage":"../../../assets/data/img/s2.jpg",
+    "ProjectNameAr":"الخدمات المالية",
+    "PrjectNameEn":"Financial Services",
+    "ProjectDescAr":"الاستشارات المالية - تساعدك على اتخاذ أفضل القرارات في الوقت المناسب",
+    "ProjectDescEn":"Financial advice - helps you make the best decisions at the right time"
+},
+{
+    "ProjectImage":"../../../assets/data/img/s1.jpg",
+    "ProjectNameAr":"خدمات التصميم و الرسوم المتحركة ",
+    "PrjectNameEn":"Design and Animation Services",
+    "ProjectDescAr":" تعزيز العروض المرئية بالرسوم المتحركة الغنية، ايضا خدمة الشاشة الكبيرة والفيديوهات السينمائية، أو مجرد فيديو لعرض المعلومات إنشاء المحتوى بالكامل وكتابة القصة ",
+    "ProjectDescEn":"Enhance visual presentations with rich animations, large screen and cinematic videos, or just video to display information Full content creation and story writing"
+}
+    ]
+    

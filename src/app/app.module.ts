@@ -1,47 +1,61 @@
-import { AppService } from './services/app-service';
-import { HttpClient } from '@angular/common/http';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TestimonialsComponent } from './Home/testimonials/testimonials.component';
+import { OurComponent } from './Home/our/our.component';
+import { ServiceComponent } from './Home/our-service/our-service.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactUsComponent } from './Home/contact-us/contact-us.component';
+import { AboutusComponent } from './Home/aboutus/aboutus.component';
 import { HomeComponent } from './Home/home.component';
+import { HeroComponent } from './Home/hero/hero.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ContactUsComponent } from './Home/contact-us/contact-us.component';
 import { PartnersComponent } from './Home/partners/partners.component';
-import { HttpClientModule } from '@angular/common/http';
-import { TestimonialsComponent } from './Home/testimonials/testimonials.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HttpClientModule} from '@angular/common/http';
+import { OwlModule } from 'ngx-owl-carousel';
+import { AppService } from './services/app-service';
 
-export function creatTranslate(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http,'./assets/i18n/','.json');
 }
-
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    AboutusComponent,
+    HeroComponent,
     PartnersComponent,
     ContactUsComponent,
     HomeComponent,
     TestimonialsComponent,
+    ServiceComponent,
+    OurComponent,
+    ContactUsComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule,
     HttpClientModule,
+    CarouselModule ,
+    OwlModule,
     BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {
-        provide: TranslateLoader,
-        useFactory: creatTranslate,
-        deps: [HttpClient]
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
       },
-      defaultLanguage: 'en'
-    })
-    
+      defaultLanguage:'en'
+  })
+
   ],
+ 
   providers: [AppService],
   bootstrap: [AppComponent]
 })

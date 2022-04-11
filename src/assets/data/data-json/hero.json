@@ -1,0 +1,26 @@
+[
+    {
+        "headingOneEn": "Incentives offered in Jordan IT sector",
+        "headingOneAr": "الحوافز المقدمة في قطاع تكنولوجيا المعلومات في الأردن",
+        "descriptionEn":"0% sales tax on IT services 0% customs duties 0% export income tax",
+        "descriptionAr":" 0% ضريبة دخل الصادرات 0% رسوم جمركية0% ضريبة المبيعات على خدمات تكنولوجيا المعلومات",
+        "img":"../../../assets/data/img/1.png"
+
+    },
+    {
+        "headingOneEn": "We are distinguished by providing integrated services for all your projects needs",
+        "headingOneAr": "نتميز بتوفير خدمات متكاملة لجميع احتياجات مشاريعك",
+        "descriptionEn": "We provide you with a comfortable and distinct technical environment with all the necessary requirements to communicate with your team easily",
+        "descriptionAr":"نقدم لك بيئة تقنية مريحة ومتميزة ونوفر لك جميع المتطلبات اللازمة للاتصال مع موظفيك ",
+        "img":"../../../assets/data/img/2.png"
+    },
+    {
+        "headingOneEn": "Start your technical team in Amman - Jordan",
+        "headingOneAr": "أنشئ فريقك التقني في عمّان - الأردن",
+
+        "descriptionEn":"ICT Graduates– on yearly basis; on average of 4.3 thousand ICT university students graduates from universities with 95% BA degrees, 3% masters degrees, and 2%deploma degree.",
+        "descriptionAr":"يتخرج في الاردن سنوياً  بمعدل 4.3 ألف من خريجي تخصصات الاتصالات وتكنولوجيا المعلومات من الجامعات بنسبة 95٪ من درجة البكالوريوس ، و 3٪ من درجة الماجستير ، و 2٪ من درجة الدبلوم.",
+        "img":"../../../assets/data/img/3.png"
+
+    }
+]

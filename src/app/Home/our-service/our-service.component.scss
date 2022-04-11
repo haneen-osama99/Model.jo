@@ -1,0 +1,143 @@
+.siz-img{
+    width: 100%;
+}
+#services {
+    position: relative;
+  }
+  #services .pattern-1 {
+    position: absolute;
+    left: 90px;
+    bottom: 395px;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    // background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png);
+  }
+  #services .pattern-2 {
+    position: absolute;
+    left: -30px;
+    bottom: 425px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    -webkit-animation: zoom-fade 5s infinite linear;
+    animation: zoom-fade 5s infinite linear;
+  }
+  #services .pattern-3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 710px;
+    height: 570px;
+    background-repeat: no-repeat;
+    background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-7.png);
+    opacity: 0.5;
+  }
+  #services .section-describtion {
+    line-height: 25px;
+  }
+  #services .section-content .grid-block {
+    margin-top: 20px;
+  }
+  #services .section-content .grid-block .grid-block-item {
+    padding: 5px;
+    text-align: center;
+  }
+  #services .section-content .grid-block .grid-block-item .grid-icon-wrapper {
+    margin-top: 40px;
+  }
+  #services .section-content .grid-block .grid-block-item .grid-block-header {
+    margin-bottom: 10px;
+  }
+  #services .section-content .grid-block .grid-block-item .grid-icon {
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    padding: 35px;
+    font-size: 40px;
+  }
+  #services .single-work {
+    margin-top: 75px;
+  }
+  #services .single-work .work-thumb {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  #services .single-work .work-thumb.mb-35 {
+    margin-bottom: 35px;
+  }
+  #services .single-work .work-thumb img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  #services .single-work .work-thumb .work-hover {
+    background: #003648bf none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    padding: 3px 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  // #services .single-work .work-thumb:hover {
+  // //   cursor: url(../img/plus.png), auto;
+  // }
+  #services .single-work .work-thumb:hover .work-hover {
+    background: #003648bf none repeat scroll 0 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity 0.3s linear 0s;
+    transition: opacity 0.3s linear 0s;
+  }
+  #services .single-work .work-excerp {
+    color: #7d7d7d;
+    font-weight: 300;
+    position: relative;
+    display: block;
+  }
+  #services .single-work .work-excerp h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  .services hr.small {
+      border: solid #313740;
+      border-width: 1px 0 0;
+      clear: both;
+      height: 0;
+      margin: 0 auto;
+      margin-top: 21px;
+      margin-bottom: 21px;
+      max-width: 100px;
+    }
+    .services .services-table .odd-row {
+      background: #f7f7f7;
+    }
+    .services .services-table .left-cell {
+      text-align: right;
+      color: #00a7c9;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .services .services-table .right-cell {
+      text-align: left;
+      color: #3a3a3a;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .services .services-table .right-cell ul li {
+      list-style: inside;
+    }
+    .text-arabic{
+      text-align: right;
+    }
