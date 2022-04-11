@@ -563,11 +563,7 @@ h6 {
   color: #fff;
 }
 
-#our-partner .item img {
-  /*border: 1px solid #ccc;
-  opacity: 0.4;
-  padding: 20px;*/
-}
+
 #our-partner .owl-carousel.owl-theme .owl-dots .owl-dot span {
   background: #c4c4cc none repeat scroll 0 0;
   display: block;
@@ -803,7 +799,6 @@ section.footer .footer-widgets .footer-widget {
   transition: color 0.15s;
   -moz-osx-font-smoothing: grayscale;
   border-radius: 50%;
-  -webkit-backface-visibility: hidden;
 }
 .social-links li a:before {
   content: "";

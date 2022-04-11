@@ -1,0 +1,33 @@
+
+[
+{
+     "ProjectImage":"../../../assets/data/img/Product1.png",
+     "ProjectNameAr":" تطبيق تأمين المركبات المؤجرة تمويلياً",
+     "PrjectNameEn":"Auto-lease vehicle insurance application",
+     "ProjectDescAr":"احد مشاريعنا التي تهدف إلى تنظيم العلاقة بين جهات التمويل وعملائها الأفراد، ونحن معتمدون للجهات الحكوميه وشركات التأمين ,ومن اهدافنا ضمان حقوق والتزامات المؤمن لهم «المؤجر والمستأجر» الواقعة ضمن إطار عقد الإيجار التمويلي الخاص بمركبات الأفراد,وضمان إتاحة الفرصة لعملاء المركبات المؤجرة بالحصول على أسعار تنافسية ومنطقية للتأمين مباشره دون معاناة ضمن شروط وضوابط مؤوسسة النقد السعودي(ساما)",
+     "ProjectDescEn":"One of our projects that aims to regulate the relationship between financing agencies and their individual customers, and we are accredited to government agencies and insurance companies, and one of our goals is to guarantee the rights and obligations of the insured “the lessor and the lessee” within the framework of the financial lease contract for individual vehicles, and to ensure that customers of rented vehicles have the opportunity to obtain prices Competitive and logical insurance directly without suffering within the terms and controls of the Saudi Monetary Agency (SAMA)"
+},
+{
+    "ProjectImage":"../../../assets/data/img/Product2.png",
+    "ProjectNameAr":"منصة جونشور لتأمين المركبات والتأمين الطبي",
+    "PrjectNameEn":"GoNsure Platform for Vehicle and Health Insurance",
+    "ProjectDescAr":"احد مشاريعنا التي تهدف إلى تنظيم العلاقة بين جهات التمويل وعملائها الأفراد، ونحن معتمدون للجهات الحكوميه وشركات التأمين ,ومن اهدافنا ضمان حقوق والتزامات المؤمن لهم «المؤجر والمستأجر» الواقعة ضمن إطار عقد الإيجار التمويلي الخاص بمركبات الأفراد,وضمان إتاحة الفرصة لعملاء المركبات المؤجرة بالحصول على أسعار تنافسية ومنطقية للتأمين مباشره دون معاناة ضمن شروط وضوابط مؤوسسة النقد السعودي(ساما)",
+    "ProjectDescEn":"GoNsure Platfor licensed by the Monetary Agency, through which it allows comparing and purchasing comprehensive insurance and third party insurance through the Internet and choosing the insurance that suits the needs of the customer in an easy way without the need to visit insurance companies to obtain quotes and compare them with other companies"
+},
+    
+{
+    "ProjectImage":"../../../assets/data/img/Product3.PNG",
+    "ProjectNameAr":" منصة تدرب لتقنية المعلومات",
+    "PrjectNameEn":"Tadarab Platform",
+    "ProjectDescAr":"تقدم حلول تقنية مختلفة للتحول الرقمي في التدريب من خلال منصة تدريبيبة مدعمة بنظام إدارة التعلم و الدفع الإلكتروني تخدم مختلف القطاعات الحكومية والخاصة. لقد قمنا بتطوير المنصة بالحلول التكاملية من حيث رفع دورات تدريبية على المنصة وعرضها للعملاء او اعطاء دورات عن طريق البث المباشر. كما نتيح فرصة ربط منصتنا مع الأنظمة الأخرى و ادارة عمليات التدريب و عرض البرامج التدريبية المقدمة من مختلف مزودي خدمات التدريب. كما يمكن اجراء الاختبارات إلكترونيا و تسهيل عملية التسجيل و الدفع الإلكتروني و إستخراج التقارير لصاحب الخدمة.",
+    "ProjectDescEn":"We have developed the platform with integrated solutions by uploading the training courses on the platform and presenting them to clients or giving courses through live broadcasts. We also provide the opportunity to link our platform with other systems, manage training operations, and display training programs provided by various training service providers. Tests can also be conducted electronically, facilitating the process of registration, electronic payment, and extracting reports for the service owner."
+    },
+    
+{
+    "ProjectImage":"../../../assets/data/img/Product4.png",
+    "ProjectNameAr":"منصة احسبها للتقييم العقاري",
+    "PrjectNameEn":"",
+    "ProjectDescAr":"منصة تقنية تهدف لتسهيل خدمات القطاع العقاري، حيث تمثل احسبها حلقة الوصل بين منشآت التقييم العقاري وبين طالبي خدمة التقييم وإنهاء جميع الإجراءات عن طريق منصة احسبها بشكل آلي وآمن، حيث تقدم خدماتها لكل من قطاع البنوك والشركات والأفراد، بحيث تسهل للباحث عن التمويل عقاري جميع الخطوات المطلوبة لضمان تجربة عميل سهلة وبشفافية عالية, يرتكز مجالها في القطاع السكني بجميع جوانبه بما فيها التقييم العقاري والبناء والتشييد",
+    "ProjectDescEn":"Ehsibha is a platform that aims to facilitate the services of the real estate sector. Ehsibha creates the link between the real estate appraisal facilities and the appraisal service applicants who complete all procedures through Ehsibha platform automatically and safely. Ehsibha supports banks, companies and consumers with easy steps to ensure they all have excellent customer experience."
+    }
+]

@@ -1,0 +1,14 @@
+#our-partner .owl-carousel.owl-theme .owl-dots .owl-dot span {
+  background: #c4c4cc none repeat scroll 0 0;
+  display: block;
+  height: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  width: 20px;
+}
+#our-partner .owl-carousel.owl-theme .owl-dots .owl-dot.active span, #our-partner .owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+  background: #007bfc none repeat scroll 0 0;
+  transform: translate3d(0px, -50%, 0px) scale(0.7);
+}

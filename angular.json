@@ -99,9 +99,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/main.css",
+              "src/assets/css/main.rtl.css",
+              "src/assets/js/animate-min.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/counter-min.js",
+              "src/assets/js/jquery.easing-min.js",
+              "src/assets/js/main-min.js"
+            ]
           }
         }
       }

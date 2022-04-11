@@ -1,0 +1,37 @@
+<section id="our-portfolio" class="wow slideInLeft py-5  py-md-6" style="background-color: #f7f7f7;">
+    <div class="pattern-layer">
+        <div class="pattern-1" style="background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png);"></div>
+        <div class="pattern-3" style=" background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/uploads/2020/09/pattern-7.png);"></div>
+    </div>
+    <div class="container px-5 ">
+        <div class="section-title text-center mb-4">
+            <h1 style="
+line-height: 1.2;">
+{{'our.title Our Portfolio'|translate}}
+            </h1>
+        </div>
+        <div class="line-sperator mx-auto"></div>
+        <div class="section-describtion text-center mb-2">
+            <p>{{'our.proud'|translate}}</p>
+        </div>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-6 col-sm-6" *ngFor="let item of data">
+                    <div class="single-work">
+                        <div class="work-thumb mb-35 wow animate__animated animate__zoomIn" data-wow-duration="1s" data-wow-delay="0s">
+                            <img src=" {{item.ProjectImage}}" alt="" class="hoverZoomLink">
+                            <div class="work-hover"></div>
+                        </div>
+                        <div class="work-excerp  wow animate__animated animate__fadeInDown " data-wow-duration="1s" data-wow-delay="0.2s">
+                            <a href="#">
+                                <h2> {{isEnLang?item.ProjectNameEn:item.ProjectNameAr}}</h2>
+                            </a>
+                            <p>{{isEnLang?item.ProjectDescEn:item.ProjectDescAr}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

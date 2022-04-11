@@ -1,0 +1,37 @@
+{
+    
+   "our":{
+    "title Our Portfolio":"Our Portfolio",
+    "proud":"“We are proud of our dealings with you, you are distinguished ",
+    "title-div-img-goInSure":"GoNsure Platform for Vehicle and Health Insurance ",
+    "pargraph-div-img-goInSure":"GoNsure Platfor licensed by the Monetary Agency, through which it allows comparing and purchasing comprehensive insurance and third party insurance through the Internet and choosing the insurance that suits the needs of the customer in an easy way without the need to visit insurance companies to obtain quotes and compare them with other companies",
+    "title-div-img-BID":"Auto-lease vehicle insurance application",
+    "pargraph-div-img-BID":"One of our projects that aims to regulate the relationship between financing agencies and their individual customers, and we are accredited to government agencies and insurance companies, and one of our goals is to guarantee the rights and obligations of the insured “the lessor and the lessee” within the framework of the financial lease contract for individual vehicles, and to ensure that customers of rented vehicles have the opportunity to obtain prices Competitive and logical insurance directly without suffering within the terms and controls of the Saudi Monetary Agency (SAMA)",
+    "title-div-img-tadarab":"Tadarab Platform",
+    "pargraph-div-img-tadarab":"We have developed the platform with integrated solutions by uploading the training courses on the platform and presenting them to clients or giving courses through live broadcasts. We also provide the opportunity to link our platform with other systems, manage training operations, and display training programs provided by various training service providers. Tests can also be conducted electronically, facilitating the process of registration, electronic payment, and extracting reports for the service owner.",
+    "title-div-img-EHSIBHA":"EHSIBHA Platform",
+    "pargraph-div-img-EHSIBHA":"Ehsibha is a platform that aims to facilitate the services of the real estate sector. Ehsibha creates the link between the real estate appraisal facilities and the appraisal service applicants who complete all procedures through Ehsibha platform automatically and safely. Ehsibha supports banks, companies and consumers with easy steps to ensure they all have excellent customer experience."
+   },
+    
+    "Services":
+    {
+    "title-Services":"Services",
+    "text-under-Services":"For IT companies that want to expand their team members efficiently in Jordan, we provide services not only office space and employees, in fact, we help all the way from the technical consultancy, team building, administrative services, managing finances and legal services, as well as other supportive services that are available per request",
+    "Excellent-IT-environment":"Excellent IT environment",
+    "Excellent-IT-environment-text":"Providing fully equipped offices for your team with technical devices and the flexibility to increase or decrease the number of offices as needed",
+    "Business-Analysis-and-Quality-Assurance-title":"Business Analysis and Quality Assurance",
+    "Business-Analysis-and-Quality-Assurance-text":"Requirements gathering, quality review And data modeling to reach the most appropriate approach in business development",
+    "Legal-Services-title":"Legal Services",
+    "Legal-Services-text":"Prepare full legal services for your company's needs including Legal advice and services and trademark registration In addition to drafting legal contracts",
+    "Recruitment-and-human-services-title":"Recruitment and human resource management services",
+    "Recruitment-and-human-services-text":"Building a team, attracting competencies, documenting employee files, and following up on contracting procedures and contracts",
+    "Financial-Services-title":"Financial Services",
+    "Financial-Services-text":"Financial advice - helps you make the best decisions at the right time",
+    "Design-and-Animation-Services-title":"Design and Animation Services",
+    "Design-and-Animation-Services-text":"Enhance visual presentations with rich animations, large screen and cinematic videos, or just video to display information Full content creation and story writing",
+
+
+    "language.ar":"Arabic",
+    "language.en":"English"
+}
+}
