@@ -29,7 +29,7 @@ export class ServiceComponent implements OnInit {
     this.appService.getService(this.isEnLang ? "en-US" : "ar")
       .then(service => {
         this.dataService = service;
-        console.log(this.dataService)
+        // console.log(this.dataService)
       })
   }
   getData() {
