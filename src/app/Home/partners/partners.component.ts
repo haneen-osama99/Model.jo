@@ -1,6 +1,8 @@
 import { AppService } from './../../services/app-service';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { ContentfulService } from 'src/app/services/contentful.service';
+import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-partners',
@@ -9,11 +11,21 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class PartnersComponent implements OnInit {
 
+  partners: any = [];
   data: any = [];
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService, private conetentfulService: ContentfulService) { }
 
   ngOnInit(): void {
     this.getPartner();
+    this.Partners();
+  }
+
+  Partners() {
+    this.conetentfulService.getPartner()
+      .then((partner: any) => {
+        this.partners = partner;
+        console.log(partner)
+      });
   }
 
   getPartner() {
@@ -21,7 +33,7 @@ export class PartnersComponent implements OnInit {
       this.data = res,
     )
   }
-  
+
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -29,8 +41,8 @@ export class PartnersComponent implements OnInit {
     pullDrag: false,
     dots: true,
     rtl: true,
-    margin:10,
-    navText: ["",""],
+    margin: 10,
+    navText: ["", ""],
     navSpeed: 700,
     responsive: {
       0: {

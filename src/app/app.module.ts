@@ -19,7 +19,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule} from '@angular/common/http';
 import { OwlModule } from 'ngx-owl-carousel';
 import { AppService } from './services/app-service';
-
+import { CourseListComponent } from './course-list/course-list.component';
+import {ContentfulService} from './services/contentful.service';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
 }
@@ -35,8 +36,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     TestimonialsComponent,
     ServiceComponent,
     OurComponent,
-    ContactUsComponent
-    
+    ContactUsComponent,
+    CourseListComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +57,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
   ],
  
-  providers: [AppService],
+  providers: [AppService, ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

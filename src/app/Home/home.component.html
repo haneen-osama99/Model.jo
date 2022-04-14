@@ -1,9 +1,3 @@
-<!-- <select name="" id="" class="form-select " (change)="changeLang($event)" >
-    <option value="en">english</option>
-    <option value="ar">arabic</option>
-</select> -->
-<!-- <button class="btn" (click)="detectLang()" >ar and en</button> -->
-<!-- <div><button (click)="detectLang()" >ar and en</button></div> -->
 <header class="jo-header">
     <div class="topbar">
         <div class="container">
@@ -39,27 +33,21 @@
                         </ul>
                         <ul class="get-quote-lang d-flex">
                             <li class="btn-lang">
-                                <!-- <button  class="switch-lang" (click)="detectLang()"  >عربي</button> -->
-                                <button (click)="detectLang()">{{'navBar.lang'|translate}}</button>
-
+                                <button (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</button>
+                                <!-- <button (click)="detectLang()">{{'navBar.lang'|translate}}</button> -->
                             </li>
-
                         </ul>
-                        <!-- <select (change)="changeLanguge($event)">
-                                <option value="ar">Arabic</option>
-                                <option value="en">English</option>
-                                </select> -->
                     </div>
                 </div>
             </nav>
         </div>
     </div>
 </header>
-
 <app-hero [islang]="isEnLang"></app-hero>
 <aboutus [islang]="isEnLang"></aboutus>
 <app-our [islang]="isEnLang"></app-our>
 <app-service [islang]="isEnLang"></app-service>
 <app-partners></app-partners>
-<app-testimonials [islang]="isEnLang"></app-testimonials>
+<app-testimonials></app-testimonials>
+<!-- <app-testimonials [islang]="isEnLang"></app-testimonials> -->
 <app-contact-us></app-contact-us>

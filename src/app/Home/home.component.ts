@@ -2,6 +2,7 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app-service';
 import { Router } from '@angular/router';
+import { faL } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -10,33 +11,35 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class HomeComponent implements OnInit {
-  isEnLang: boolean = true;
-  data:any=[]
+  isEnLang: boolean = false;
+  data: any = []
   @Input() islang: boolean = true;
 
 
   constructor(public router: Router,
     private translate: TranslateService,
-     private appService :AppService,
-
-    ) { }
+    private appService: AppService,
+  ) { }
 
   ngOnInit(): void {
-    
+    this.detectLang()
   }
+
   detectLang() {
-    this.isEnLang = !this.isEnLang;
-    this.appService.currentLang.subscribe((res: any) => {
-      if (this.isEnLang == false) {
-        this.translate.use('ar')
-        document.getElementsByTagName("html")[0].dir = "rtl";
-      } else {
-        this.translate.use('en')
-      }
-    });
+    // this.isEnLang = !this.isEnLang;
+    // this.appService.currentLang.subscribe((res: any) => {
+    //   if (this.isEnLang == false) {
+    //     this.translate.use('ar')
+    //     document.getElementsByTagName("html")[0].dir = "rtl";
+    //   } else {
+    //     this.translate.use('en')
+    //   }
+    // });
+    this.appService.currentLang.subscribe(res => this.isEnLang = res == "en")
   }
-  changeLang(e: any) {
-    console.log(e.target.value);
-    this.translate.use(e.target.value);
+
+  changeLang(lang: any) {
+    this.translate.use(lang);
+    this.appService.currentLang.next(lang);
   }
 }

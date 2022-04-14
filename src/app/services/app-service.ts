@@ -7,7 +7,7 @@ import { BehaviorSubject } from "rxjs";
 })
 
 export class AppService {
-    currentLang = new BehaviorSubject<string>("ar");
+    currentLang = new BehaviorSubject<string>("en");
 
     constructor(private http: HttpClient) { }
     getOurServiceDate() {

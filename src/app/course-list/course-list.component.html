@@ -1,0 +1,18 @@
+<p>course-list works!</p>
+
+<div *ngFor="let course of courses">
+        <div class="alert alert-info">
+            <div class="d-flex flex-wrap">
+                <div class="p-2">
+                    <a href={{course.fields.url}} target="_blank">
+                        <img src={{course.fields.courseImage.fields.file.url}} alt="" class="rounded" width="196"/>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href={{course.fields.url}} target="_blank">
+                        <h2 class="alert-heading">{{course.fields.title}}</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+</div>

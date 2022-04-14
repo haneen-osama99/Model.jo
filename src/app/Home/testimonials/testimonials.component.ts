@@ -1,27 +1,28 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Entry } from 'contentful';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { AppService } from 'src/app/services/app-service';
+import { ContentfulService } from 'src/app/services/contentful.service';
 
 @Component({
   selector: 'app-testimonials',
   templateUrl: './testimonials.component.html',
   styleUrls: ['./testimonials.component.scss']
 })
-export class TestimonialsComponent implements OnInit, OnChanges {
+export class TestimonialsComponent implements OnInit {
   data: any = [];
   active = 0;
   isEnLang: boolean = false;
-  @Input() islang: boolean = false;
+  // @Input() islang: boolean = false;
 
-  constructor(private appService: AppService, private translate: TranslateService) { }
+  constructor(private appService: AppService, private translate: TranslateService,
+    private conetentfulService: ContentfulService) { }
 
+  tests: any = [];
   ngOnInit(): void {
     this.gettest();
-    this.isEnLang = this.islang;
-  }
-
-  ngOnChanges() {
+    // this.isEnLang = this.islang;
     this.detectLang();
   }
 
@@ -60,16 +61,26 @@ export class TestimonialsComponent implements OnInit, OnChanges {
   showItem(value: number) {
     this.active = value;
   }
-  detectLang(){
-    this.isEnLang = !this.isEnLang;
-    this.appService.currentLang.subscribe((res: any) => {
-      if (this.isEnLang == false) {
-        this.translate.use('ar')
-        document.getElementsByTagName("html")[0].dir = "rtl";
-      } else {
-        this.translate.use('en')
-      }
-    });
+  detectLang() {
+    this.appService.currentLang.subscribe(res => {
+      this.isEnLang = res == "en";
+      console.log(res)
+      this.contentful();
+      // this.isEnLang = !this.isEnLang;
+      // this.appService.currentLang.subscribe((res: any) => {
+      //   if (this.isEnLang == false) {
+      //     this.translate.use('ar')
+      //     document.getElementsByTagName("html")[0].dir = "rtl";
+      //   } else {
+      //     this.translate.use('en')
+      //   }
+      // });
+    })
+  }
+
+  contentful() {
+    this.conetentfulService.getTest(this.isEnLang ? "en-US" : "ar")
+      .then(tests => { this.tests = tests; console.log(tests) });
   }
 }
 
