@@ -1,9 +1,10 @@
-import { HomeComponent } from './Home/home.component';
+import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactUsComponent } from './Home/contact-us/contact-us.component';
-import { HeroComponent } from './Home/hero/hero.component';
-import { AboutusComponent } from './Home/aboutus/aboutus.component';
+import { ContactUsComponent } from './home/contact-us/contact-us.component';
+import { HeroComponent } from './home/hero/hero.component';
+import { AboutusComponent } from './home/aboutus/aboutus.component';
+import { AyhamComponent } from './ayham/ayham.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,9 @@ const routes: Routes = [
   {
     path:"ContactUs",
     component:ContactUsComponent
-  }
+  },
+  { path: '', redirectTo: '/ayham', pathMatch: 'full' },
+  { path: 'ayham', component: AyhamComponent },
 ];
 
 @NgModule({

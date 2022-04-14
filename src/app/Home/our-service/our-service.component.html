@@ -16,17 +16,17 @@
         </div>
         <div class="section-content">
             <div class="row">
-                <div class="col-md-4 col-sm-6" *ngFor="let item of data">
+                <div class="col-md-4 col-sm-6" *ngFor="let item of dataService | orderBy : ['fields.order'] ">
                     <div class="single-work">
                         <div class="work-thumb mb-35 wow animate__animated animate__zoomIn" data-wow-duration="1s" data-wow-delay="0s">
-                            <img src="{{item.ProjectImage}}"  alt="" class="hoverZoomLink siz-img">
+                            <img src="{{item.fields.img.fields.file.url}}"  alt="" class="hoverZoomLink siz-img">
                             <div class="work-hover"></div>
                         </div>
                         <div class="work-excerp  wow animate__animated animate__fadeInDown " data-wow-duration="1s" data-wow-delay="0.2s">
                             <a href="#">
-                                <h2>{{isEnLang?item.ProjectNameEn:item.ProjectNameAr}}</h2>
+                                <h2>{{item.fields.title}}</h2>
                             </a>
-                            <p>{{isEnLang?item.ProjectDescEn:item.ProjectDescAr}}</p>
+                            <p>{{item.fields.description}}</p>
                         </div>
                     </div>
                 </div>

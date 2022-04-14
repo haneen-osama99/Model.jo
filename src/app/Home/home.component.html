@@ -1,10 +1,10 @@
-<!-- <select name="" id="" class="form-select " (change)="changeLang($event)" >
+<!--  <select name="" id="" class="form-select " (change)="changeLang($event)" >
     <option value="en">english</option>
     <option value="ar">arabic</option>
 </select> -->
-<!-- <button class="btn" (click)="detectLang()" >ar and en</button> -->
-<!-- <div><button (click)="detectLang()" >ar and en</button></div> -->
-<header class="jo-header">
+ <button class="btn" (click)="detectLang()" >ar and en</button> -->
+ <div><button (click)="detectLang()" >ar and en</button></div> -->
+ <header class="jo-header">
     <div class="topbar">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -22,10 +22,10 @@
                                 <a class="nav-link active" aria-current="page" href="">{{'navBar.HOME'|translate}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about-us">{{'navBar.ABOUT US'|translate}}</a>
+                                <a class="nav-link" href="#../home/aboutus/aboutus.component.html">{{'navBar.ABOUT US'|translate}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#our-portfolio">{{'navBar.OUR PORTFOLIO'|translate}}</a>
+                                <a class="nav-link" href="#../home/">{{'navBar.OUR PORTFOLIO'|translate}}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">{{'navBar.SERVICES'|translate}}</a>
@@ -38,23 +38,23 @@
                             </li>
                         </ul>
                         <ul class="get-quote-lang d-flex">
-                            <li class="btn-lang">
-                                <!-- <button  class="switch-lang" (click)="detectLang()"  >عربي</button> -->
-                                <button (click)="detectLang()">{{'navBar.lang'|translate}}</button>
+                            <li class="btn-lang"> 
+                                 <!-- <button  class="switch-lang" (click)="detectLang()"  >عربي</button>  -->
+                                 <button (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</button> 
 
-                            </li>
+                             </li> 
 
-                        </ul>
+                        </ul> 
                         <!-- <select (change)="changeLanguge($event)">
                                 <option value="ar">Arabic</option>
                                 <option value="en">English</option>
                                 </select> -->
-                    </div>
+                   </div>
                 </div>
             </nav>
         </div>
     </div>
-</header>
+</header> 
 
 <app-hero [islang]="isEnLang"></app-hero>
 <aboutus [islang]="isEnLang"></aboutus>
@@ -63,3 +63,4 @@
 <app-partners></app-partners>
 <app-testimonials [islang]="isEnLang"></app-testimonials>
 <app-contact-us></app-contact-us>
+<app-ayham></app-ayham> 
