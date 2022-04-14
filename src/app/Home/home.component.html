@@ -36,13 +36,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact-us">{{'navBar.CONTACT US'|translate}}</a>
                             </li>
-                        </ul>
-                        <ul class="get-quote-lang d-flex">
-                            <li class="btn-lang"> 
-                                 <!-- <button  class="switch-lang" (click)="detectLang()"  >عربي</button>  -->
-                                 <button (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</button> 
+                            <li class="btn-lang nav-link ">
+                                <!-- <button  class="switch-lang" (click)="detectLang()"  >عربي</button> -->
+                                <a style="cursor: pointer;" class="switch-lang " (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</a>
 
-                             </li> 
+                             </li>
+                        </ul>
+                        <ul class="get-quote-lang d-flex ">
+                            
 
                         </ul> 
                         <!-- <select (change)="changeLanguge($event)">
@@ -63,4 +64,3 @@
 <app-partners></app-partners>
 <app-testimonials [islang]="isEnLang"></app-testimonials>
 <app-contact-us></app-contact-us>
-<app-ayham></app-ayham> 

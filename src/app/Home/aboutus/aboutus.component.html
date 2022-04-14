@@ -1,4 +1,3 @@
-
 <section id="about-us" class="aboutinfo about-area py-5 py-md-6">
     <div class="pattern-layer">
         <div class="pattern-1" style="background-image: url(assets/data/img/pattern-5.png);"></div>
@@ -24,17 +23,17 @@
             </h1>
         </div>
         <div class="line-sperator mx-auto"></div>
-        <div class="container" *ngFor="let item of data">
+        <div class="container" *ngFor="let item of aboutus">
             <div class="row" >
                 <div class="col-md-6 col-lg-6 " style="width: 57%;">
                     <div class="about-left">
                         <h2 class="wow animate__animated animate__fadeInDown" data-wow-duration="2s"
                             data-wow-delay="0s" style="width: 100%;">
-                            {{isEnLang?item.subTitleEn:item.subTitleAr}}
+                            {{item.fields.subTitle}}
                         </h2>
                         <!-- <figure class="about-thumb wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
                             data-wow-delay="0.4s"> -->
-                            <img src="{{item.aboutUsImg}}" >
+                            <img src="{{item.fields.aboutUsImage.fields.file.url}}" >
                             <!-- <figcaption class="wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
                                 data-wow-delay="0.8s"></figcaption>
                         </figure> -->
@@ -44,10 +43,10 @@
                     <div class="about-quote wow animate__animated animate__fadeInLeft " data-wow-duration="2s"
                         data-wow-delay="1.4s">
                         <blockquote>
-                            {{isEnLang?item.paragraphOneEn:item.paragraphOneAr}}
+                            {{item.fields.paragraphone}}
                         </blockquote>
                         <blockquote>
-                            {{isEnLang?item.paragraphTwoEn:item.paragraphTwoAr}}
+                            {{item.fields.paragraphtwo}}
                         </blockquote>
                     </div>
                 </div>
@@ -55,3 +54,15 @@
         </div>
     </div>
 </section>
+
+
+
+
+<!-- <div class="card" style="width: 18rem;" *ngFor="let item of aboutus">
+    <img src="{{item.fields.aboutUsImage.fields.file.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.fields.subTitle}}</h5>
+      <p class="card-text">{{item.fields.paragraphone}}</p>
+      <p class="card-text">{{item.fields.paragraphtwo}}</p>
+    </div>
+  </div> -->
