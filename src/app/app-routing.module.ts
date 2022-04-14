@@ -1,10 +1,10 @@
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './Home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactUsComponent } from './home/contact-us/contact-us.component';
-import { HeroComponent } from './home/hero/hero.component';
-import { AboutusComponent } from './home/aboutus/aboutus.component';
-import { AyhamComponent } from './ayham/ayham.component';
+import { ContactUsComponent } from './Home/contact-us/contact-us.component';
+import { HeroComponent } from './Home/hero/hero.component';
+import { AboutusComponent } from './Home/aboutus/aboutus.component';
+import { CourseListComponent } from './course-list/course-list.component';
 
 const routes: Routes = [
   {
@@ -23,8 +23,12 @@ const routes: Routes = [
     path:"ContactUs",
     component:ContactUsComponent
   },
-  { path: '', redirectTo: '/ayham', pathMatch: 'full' },
-  { path: 'ayham', component: AyhamComponent },
+  {
+    path:'' , redirectTo: '/courses' , pathMatch:'full'
+  },
+  {
+    path:'courses' , component: CourseListComponent
+  }
 ];
 
 @NgModule({
@@ -32,5 +36,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  
- }
+
+}

@@ -5,6 +5,7 @@
                     <div class="col-sm-12">
                         <div class="section-title text-center">
                             <h1 style="line-height: 1.2;">
+                                <!-- {{partners.img}} -->
                                 {{'partners.header'| translate}} 
                             </h1>
                         </div>
@@ -12,10 +13,10 @@
                     <div class="line-sperator mx-auto"></div>
 
                     <owl-carousel-o [options]="customOptions" #owlCar class="mb-5" >
-                        <ng-template carouselSlide *ngFor="let item of data">
+                        <ng-template carouselSlide *ngFor="let partner of partners">
                             <div class="slide">
                                 <!-- {{'partners.img1' | json}} -->
-                             <img width="150" height="150" src="{{item.img}}">
+                             <img width="196" height="150" src="{{partner.fields.acigInsuranceSvg.fields.file.url}}"  class="rounded">
                             </div>
                         </ng-template>
                     </owl-carousel-o> 
@@ -27,4 +28,11 @@
     
 
 
-                
+    <!-- <owl-carousel-o [options]="customOptions" #owlCar class="mb-5" >
+        <ng-template carouselSlide *ngFor="let item of data">
+            <div class="slide">-->
+                <!-- {{'partners.img1' | json}} -->
+             <!-- <img width="150" height="150" src="{{item.img}}">
+            </div>
+        </ng-template>
+    </owl-carousel-o>   -->

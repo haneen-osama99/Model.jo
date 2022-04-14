@@ -2,6 +2,7 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { AppService } from '../services/app-service';
 import { Router } from '@angular/router';
+import { faL } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -24,10 +25,18 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.detectLang();
   }
+
   detectLang() {
-    this.appService.currentLang.subscribe((res: any) => {
-      this.isEnLang = res == "en";
-    });
+    // this.isEnLang = !this.isEnLang;
+    // this.appService.currentLang.subscribe((res: any) => {
+    //   if (this.isEnLang == false) {
+    //     this.translate.use('ar')
+    //     document.getElementsByTagName("html")[0].dir = "rtl";
+    //   } else {
+    //     this.translate.use('en')
+    //   }
+    // });
+    this.appService.currentLang.subscribe(res => this.isEnLang = res == "en")
   }
 
   changeLang(lang: any) {

@@ -1,25 +1,27 @@
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TestimonialsComponent } from './home/testimonials/testimonials.component';
-import { OurComponent } from './home/our/our.component';
-import { ServiceComponent } from './home/our-service/our-service.component';
+import { TestimonialsComponent } from './Home/testimonials/testimonials.component';
+import { OurComponent } from './Home/our/our.component';
+import { ServiceComponent } from './Home/our-service/our-service.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutusComponent } from './home/aboutus/aboutus.component';
-import { HomeComponent } from './home/home.component';
-import { HeroComponent } from './home/hero/hero.component';
+import { AboutusComponent } from './Home/aboutus/aboutus.component';
+import { HomeComponent } from './Home/home.component';
+import { HeroComponent } from './Home/hero/hero.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { ContactUsComponent } from './home/contact-us/contact-us.component';
-import { PartnersComponent } from './home/partners/partners.component';
+import { ContactUsComponent } from './Home/contact-us/contact-us.component';
+import { PartnersComponent } from './Home/partners/partners.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule} from '@angular/common/http';
 import { OwlModule } from 'ngx-owl-carousel';
 import { AppService } from './services/app-service';
-import { AyhamComponent } from './ayham/ayham.component';
+import { CourseListComponent } from './course-list/course-list.component';
+import {ContentfulService} from './services/contentful.service';
+// import { AyhamComponent } from './ayham/ayham.component';
 import {NgPipesModule} from 'ngx-pipes';
 
 
@@ -39,7 +41,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ServiceComponent,
     OurComponent,
     ContactUsComponent,
-    AyhamComponent
+    CourseListComponent
+
     
   ],
   imports: [
@@ -61,7 +64,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
   ],
  
-  providers: [AppService],
+  providers: [AppService, ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

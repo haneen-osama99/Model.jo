@@ -13,7 +13,8 @@
                 <div class="line-sperator mx-auto"></div>
                 <div class="col-12 text-center">
                         <owl-carousel-o [options]="customOptions" #owlCar class="mb-5">
-                            <ng-template carouselSlide *ngFor="let item of data ; let i = index">
+                            <ng-template carouselSlide *ngFor="let test of tests ; let i = index">
+                            
                                 <div class="slide">
                                     <div class="row">
                                         <div>
@@ -27,11 +28,20 @@
                                             <div class="col-sm-12 qoutSec  d-flex justify-content-center">
                                                 <!-- 1 -->
                                                 <p>
-                                                    {{isEnLang?item.sayes_en:item.sayes_ar}}
+                                                    {{test.fields.sayes}}
+
+                                                    <!-- {{isEnLang?test.fields.sayesEn:test.fields.sayesAr}} -->
+                                                    <!-- {{isEnLang?item.sayes_en:item.sayes_ar}} -->
                                                 </p>
                                                 <small>
-                                                    <strong>{{isEnLang?item.name_en:item.name_ar}}</strong><br>
-                                                    {{isEnLang?item.position_en:item.position_ar}}
+                                                    <!-- <strong>{{isEnLang?item.name_en:item.name_ar}}</strong><br>
+                                                    {{isEnLang?item.position_en:item.position_ar}} -->
+                                                    <strong>
+                                                        {{test.fields.name}}
+                                                        <!-- {{isEnLang?test.fields.nameEn:test.fields.nameAr}} -->
+                                                    </strong><br>
+                                                    {{test.fields.position}}
+                                                    <!-- {{isEnLang?test.fields.positionEn:test.fields.positionAr}} -->
                                                 </small>
                                             </div>
                                         </div>
