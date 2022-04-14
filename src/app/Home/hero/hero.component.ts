@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { Entry } from 'contentful';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { AppService } from 'src/app/services/app-service';
 
@@ -12,36 +13,46 @@ import { AppService } from 'src/app/services/app-service';
 export class HeroComponent implements OnInit {
 data :any =[];
 isEnLang: boolean = false;
-  @Input() islang: boolean = false
+  @Input() islang: boolean = false;
+  hero : any =[]
   constructor(
     public router:Router,
     private appService :AppService,
-     private translate: TranslateService
+    private translate: TranslateService
    ) { }
    
   ngOnInit(): void {
     this.getHero();
     this.isEnLang = this.islang;
+    this.detectLang();    
   }
-  ngOnChanges() {
-    this.detectLang();
-  }
+ 
   detectLang(){
-    this.isEnLang = !this.isEnLang;
-    this.appService.currentLang.subscribe((res: any) => {
-      if (this.isEnLang == false) {
-        this.translate.use('ar')
-        document.getElementsByTagName("html")[0].dir = "rtl";
-      } else {
-        this.translate.use('en')
-      }
-    });
+    this.appService.currentLang.subscribe(res =>{
+      this.isEnLang = res == "en";
+      console.log("hh"+res)
+      this.getContentful();
+    })
+    // this.isEnLang = !this.isEnLang;
+    // this.appService.currentLang.subscribe((res: any) => {
+    //   if (this.isEnLang == false) {
+    //     this.translate.use('ar')
+    //     document.getElementsByTagName("html")[0].dir = "rtl";
+    //   } else {
+    //     this.translate.use('en')
+    //   }
+    // });
   }
   getHero(){
     this.appService.getHero().subscribe (res=>
      this.data =res
     //  console.log(res)
       )
+  }
+  getContentful(){
+    this.appService.getHeroSection(this.isEnLang? "en-US": "ar")
+    .then(herosection => this.hero=herosection);
+  
   }
   customOptions: OwlOptions = {
     loop: true,

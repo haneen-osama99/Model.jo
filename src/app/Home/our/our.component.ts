@@ -30,8 +30,7 @@ export class OurComponent implements OnInit {
   detectLang() {
     this.isEnLang=!this.isEnLang;
     this.appService.currentLang.subscribe(res => {
-    debugger
-    if(this.isEnLang ==false){
+     if(this.isEnLang ==false){
       this.translateService.use('ar')
       document.getElementsByTagName("html")[0].dir = "rtl";
     }else {

@@ -20,6 +20,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { OwlModule } from 'ngx-owl-carousel';
 import { AppService } from './services/app-service';
 
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
 }
@@ -35,7 +36,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     TestimonialsComponent,
     ServiceComponent,
     OurComponent,
-    ContactUsComponent
+    ContactUsComponent,
+
     
   ],
   imports: [

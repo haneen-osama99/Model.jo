@@ -40,7 +40,7 @@
                         <ul class="get-quote-lang d-flex">
                             <li class="btn-lang">
                                 <!-- <button  class="switch-lang" (click)="detectLang()"  >عربي</button> -->
-                                <button (click)="detectLang()">{{'navBar.lang'|translate}}</button>
+                                <a class="switch-lang" (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</a>
 
                             </li>
 

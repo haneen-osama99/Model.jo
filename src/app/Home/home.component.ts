@@ -22,21 +22,26 @@ export class HomeComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    
+    this.detectLang() ;
   }
   detectLang() {
-    this.isEnLang = !this.isEnLang;
-    this.appService.currentLang.subscribe((res: any) => {
-      if (this.isEnLang == false) {
-        this.translate.use('ar')
-        document.getElementsByTagName("html")[0].dir = "rtl";
-      } else {
-        this.translate.use('en')
-      }
-    });
+    this.appService.currentLang.subscribe(res => this.isEnLang = res == "en")
+    // this.isEnLang = !this.isEnLang;
+    // this.appService.currentLang.subscribe((res: any) => {
+    //   if (this.isEnLang == false) {
+    //     this.translate.use('ar')
+    //     document.getElementsByTagName("html")[0].dir = "rtl";
+    //   } else {
+    //     this.translate.use('en')
+    //   }
+    // });
   }
-  changeLang(e: any) {
-    console.log(e.target.value);
-    this.translate.use(e.target.value);
+  // changeLang(e: any) {
+  //   console.log(e.target.value);
+  //   this.translate.use(e.target.value);
+  // }
+  changeLang(lang: any) {
+    this.translate.use(lang);
+    this.appService.currentLang.next(lang);
   }
 }
