@@ -11,7 +11,7 @@ import { faL } from '@fortawesome/free-solid-svg-icons';
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class HomeComponent implements OnInit {
-  isEnLang: boolean = false;
+  isEnLang: boolean = true;
   data: any = []
   @Input() islang: boolean = true;
 
@@ -19,10 +19,11 @@ export class HomeComponent implements OnInit {
   constructor(public router: Router,
     private translate: TranslateService,
     private appService: AppService,
+
   ) { }
 
   ngOnInit(): void {
-    this.detectLang()
+    this.detectLang();
   }
 
   detectLang() {
@@ -41,5 +42,6 @@ export class HomeComponent implements OnInit {
   changeLang(lang: any) {
     this.translate.use(lang);
     this.appService.currentLang.next(lang);
+    document.getElementsByTagName("html")[0].dir = lang == "en" ? "ltr" : "rtl"
   }
 }

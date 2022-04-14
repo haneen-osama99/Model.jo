@@ -21,6 +21,10 @@ import { OwlModule } from 'ngx-owl-carousel';
 import { AppService } from './services/app-service';
 import { CourseListComponent } from './course-list/course-list.component';
 import {ContentfulService} from './services/contentful.service';
+// import { AyhamComponent } from './ayham/ayham.component';
+import {NgPipesModule} from 'ngx-pipes';
+
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
 }
@@ -38,6 +42,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     OurComponent,
     ContactUsComponent,
     CourseListComponent
+
+    
   ],
   imports: [
     BrowserModule,
@@ -45,6 +51,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpClientModule,
     CarouselModule ,
     OwlModule,
+    NgPipesModule,
     BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {
