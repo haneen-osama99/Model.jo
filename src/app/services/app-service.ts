@@ -101,9 +101,6 @@ export class AppService {
 
 }
 
-
-
-
 function marked(md: string) {
     throw new Error("Function not implemented.");
 }

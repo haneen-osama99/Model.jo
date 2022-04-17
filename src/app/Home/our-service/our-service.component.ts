@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { OurComponent } from '../our/our.component';
 import { AppService } from '../../services/app-service';
 import { Entry } from 'contentful';
 

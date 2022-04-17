@@ -1,8 +1,8 @@
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TestimonialsComponent } from './Home/testimonials/testimonials.component';
-import { OurComponent } from './Home/our/our.component';
-import { ServiceComponent } from './Home/our-service/our-service.component';
+import { TestimonialsComponent } from './home/testimonials/testimonials.component';
+import { OurComponent } from './home/our/our.component';
+import { ServiceComponent } from './home/our-service/our-service.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,16 +13,15 @@ import { HeroComponent } from './Home/hero/hero.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { ContactUsComponent } from './Home/contact-us/contact-us.component';
-import { PartnersComponent } from './Home/partners/partners.component';
+import { PartnersComponent } from './home/partners/partners.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule} from '@angular/common/http';
 import { OwlModule } from 'ngx-owl-carousel';
 import { AppService } from './services/app-service';
 import { CourseListComponent } from './course-list/course-list.component';
 import {ContentfulService} from './services/contentful.service';
-// import { AyhamComponent } from './ayham/ayham.component';
 import {NgPipesModule} from 'ngx-pipes';
+import { ContactUsComponent } from './Home/contact-us/contact-us.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
