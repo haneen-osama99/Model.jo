@@ -32,21 +32,10 @@ isEnLang: boolean = false;
       this.getContentful();
     })
   }
-  // detectLang(){
-  //   this.isEnLang = !this.isEnLang;
-  //   this.appService.currentLang.subscribe((res: any) => {
-  //     if (this.isEnLang == false) {
-  //       this.translate.use('ar')
-  //       document.getElementsByTagName("html")[0].dir = "rtl";
-  //     } else {
-  //       this.translate.use('en')
-  //     }
-  //   });
-  // }
+
 getAbout(){
   this.appService.getabout().subscribe (res =>
     this.data =res
-   //  console.log(res)
      )
 }
 getContentful(){

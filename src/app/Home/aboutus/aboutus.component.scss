@@ -153,13 +153,6 @@ h1{
     padding-left: calc(var(--bs-gutter-x) * 0.5);
     margin-top: var(--bs-gutter-y);
 }
-  // .paragraph {
-  //   // margin-left: 43%;
-  //   // margin-top: -30%;
-  //   position: absolute;
-  //   top: 35%;
-  //   width: 50%;
-  // }
 
 blockquote,
 q {
@@ -181,3 +174,10 @@ q:after {
     max-width: 90px;
     border-radius: 6px;
   }
+
+  @media screen and (min-width: 315px) and (max-width: 768px) {
+  .size {
+    width:100%!important;
+
+  }
+}

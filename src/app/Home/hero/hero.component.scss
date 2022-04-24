@@ -118,16 +118,7 @@
   outline: 303px solid #027bfc3b;
   outline-offset: -305px;
 }
-// .sliderone:after {
-//   background: #027bfc3b;
-//   opacity: 1;
-//   bottom: 0px;
-//   content: "";
-//   left: 0;
-//   position: absolute;
-//   right: 0;
-//   top: 0;
-// }
+
 h1,h2,h3{
   position: absolute;
   top: 41%;
@@ -176,4 +167,20 @@ h1,h2,h3{
   position: absolute;
   top: 83%;
   left: 42%;
+}
+
+// @media screen and (min-width: 315px) and (max-width: 430px) {
+//   .owl-theme[_ngcontent-sbs-c19] {
+//     width: 195%!important;
+
+//   }
+// }
+
+
+@media screen and (max-width: 428px) {
+  .Titles {
+left: 59%!important;
+width: 40%!important;
+text-align: center;
+  }
 }

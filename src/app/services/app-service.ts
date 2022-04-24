@@ -74,15 +74,6 @@ export class AppService {
     }
 
 
-
-    getAyhams(locale: string): Promise<Entry<any>[]> {
-        return this.client.getEntries({
-          content_type: 'ayham',
-          locale: locale
-                }        )
-        .then(res => res.items);
-      }
-
       getOur(locale: string): Promise<Entry<any>[]> {
         return this.client.getEntries({
           content_type: 'our',

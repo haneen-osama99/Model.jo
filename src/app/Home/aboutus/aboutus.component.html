@@ -25,21 +25,16 @@
         <div class="line-sperator mx-auto"></div>
         <div class="container" *ngFor="let item of aboutus">
             <div class="row" >
-                <div class="col-md-6 col-lg-6 " style="width: 57%;">
+                <div class="col-sm-12 col-md-6 col-lg-6 size" style="width: 57%;">
                     <div class="about-left">
-                        <h2 class="wow animate__animated animate__fadeInDown" data-wow-duration="2s"
+                        <h2 class="col-sm-12 wow animate__animated animate__fadeInDown  " data-wow-duration="2s"
                             data-wow-delay="0s" style="width: 100%;">
                             {{item.fields.subTitle}}
                         </h2>
-                        <!-- <figure class="about-thumb wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
-                            data-wow-delay="0.4s"> -->
                             <img src="{{item.fields.aboutUsImage.fields.file.url}}" >
-                            <!-- <figcaption class="wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
-                                data-wow-delay="0.8s"></figcaption>
-                        </figure> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6" style="width: 43%;">
+                <div class="col-sm-12 col-md-6 col-lg-6 size" style="width: 43%;">
                     <div class="about-quote wow animate__animated animate__fadeInLeft " data-wow-duration="2s"
                         data-wow-delay="1.4s">
                         <blockquote>
@@ -58,11 +53,3 @@
 
 
 
-<!-- <div class="card" style="width: 18rem;" *ngFor="let item of aboutus">
-    <img src="{{item.fields.aboutUsImage.fields.file.url}}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{item.fields.subTitle}}</h5>
-      <p class="card-text">{{item.fields.paragraphone}}</p>
-      <p class="card-text">{{item.fields.paragraphtwo}}</p>
-    </div>
-  </div> -->

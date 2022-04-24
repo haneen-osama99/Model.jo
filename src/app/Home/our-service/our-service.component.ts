@@ -20,15 +20,13 @@ export class ServiceComponent implements OnInit {
     this.isEnLang = this.islang;
     this.detectLang();
 
+
   }
-  // ngOnChanges() {
-  //   this.detectLang();
-  // }
+
   getContentItems() {
     this.appService.getService(this.isEnLang ? "en-US" : "ar")
       .then(service => {
         this.dataService = service;
-        // console.log(this.dataService)
       })
   }
   getData() {
@@ -58,7 +56,10 @@ export class ServiceComponent implements OnInit {
 
   // });
 
+
+
 }
+
 
 
 

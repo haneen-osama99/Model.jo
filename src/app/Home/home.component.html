@@ -1,9 +1,3 @@
-<!--  <select name="" id="" class="form-select " (change)="changeLang($event)" >
-    <option value="en">english</option>
-    <option value="ar">arabic</option>
-</select> -->
-<button class="btn" (click)="detectLang()">ar and en</button> -->
-<div><button (click)="detectLang()">ar and en</button></div> -->
 <header class="jo-header">
     <div class="topbar">
         <div class="container">
@@ -12,16 +6,16 @@
                     <a class="navbar-brand">
                         <img src="assets/data/img/model-logo.png" alt="" class="d-inline-block align-text-top">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                   
+                    <button click="openNavBar()"  class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span  class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="">{{'navBar.HOME'|translate}}
-
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -29,7 +23,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#partner">{{'navBar.OUR PORTFOLIO'|translate}}</a>
+                                <a class="nav-link" href="#our-portfolio">{{'navBar.OUR PORTFOLIO'|translate}}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">{{'navBar.SERVICES'|translate}}</a>
@@ -46,29 +40,19 @@
                                     (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</a>
                             </li>
                         </ul>
-                    
-                        <!-- <select (change)="changeLanguge($event)">
-                                <option value="ar">Arabic</option>
-                                <option value="en">English</option>
-                                </select> -->
                    </div>
                 </div>
             </nav>
         </div>
     </div>
 </header>
-
 <app-hero [islang]="isEnLang"></app-hero>
 <aboutus [islang]="isEnLang"></aboutus>
 <app-our [islang]="isEnLang"></app-our>
 <app-service [islang]="isEnLang"></app-service>
 <app-partners></app-partners>
 <app-testimonials></app-testimonials>
-<!-- <app-testimonials [islang]="isEnLang"></app-testimonials> -->
 <app-contact-us></app-contact-us>
 
-<!-- 
- <select (change)="changeLanguge($event)">
-    <option value="ar">Arabic</option>
-    <option value="en">English</option>
-    </select>    -->
+
+
