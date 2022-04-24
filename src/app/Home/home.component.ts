@@ -10,11 +10,11 @@ import { faL } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./Home.component.scss'],
   encapsulation: ViewEncapsulation.ShadowDom
 })
+
 export class HomeComponent implements OnInit {
   isEnLang: boolean = true;
   data: any = []
   @Input() islang: boolean = true;
-
 
   constructor(public router: Router,
     private translate: TranslateService,

@@ -23,7 +23,7 @@ import { CourseListComponent } from './course-list/course-list.component';
 import {ContentfulService} from './services/contentful.service';
 // import { AyhamComponent } from './ayham/ayham.component';
 import {NgPipesModule} from 'ngx-pipes';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -41,8 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ServiceComponent,
     OurComponent,
     ContactUsComponent,
-    CourseListComponent
-
+    CourseListComponent,
     
   ],
   imports: [
@@ -53,6 +52,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     OwlModule,
     NgPipesModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

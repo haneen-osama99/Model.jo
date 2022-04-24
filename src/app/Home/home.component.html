@@ -2,13 +2,15 @@
     <option value="en">english</option>
     <option value="ar">arabic</option>
 </select> -->
-<button class="btn" (click)="detectLang()">ar and en</button> -->
+
+<!-- <button class="btn" (click)="detectLang()">ar and en</button> --> -->
 <div><button (click)="detectLang()">ar and en</button></div> -->
 <header class="jo-header">
     <div class="topbar">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
+                    <!-- <i class="fa-brands fa-facebook-f"></i>  -->
                     <a class="navbar-brand">
                         <img src="assets/data/img/model-logo.png" alt="" class="d-inline-block align-text-top">
                     </a>
@@ -21,11 +23,11 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="">{{'navBar.HOME'|translate}}
-
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#../home/aboutus/aboutus.component.html">{{'navBar.ABOUTUS'|translate}}
+                                <a class="nav-link"
+                                    href="#../home/aboutus/aboutus.component.html">{{'navBar.ABOUTUS'|translate}}
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -46,7 +48,7 @@
                                     (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</a>
                             </li>
                         </ul>
-                    
+
                     </div>
                 </div>
             </nav>
@@ -67,4 +69,5 @@
  <select (change)="changeLanguge($event)">
     <option value="ar">Arabic</option>
     <option value="en">English</option>
-    </select>    -->
+    </select>   
+ -->
