@@ -176,11 +176,46 @@ h1,h2,h3{
 //   }
 // }
 
-
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 320px) {
   .Titles {
-left: 59%!important;
-width: 40%!important;
-text-align: center;
+    left: 19% !important;
+    width: 69% !important;
+    text-align: center;
+    top: 12%;
+    font-size: 34px;
+    line-height: 57px;
+  }
+  .btn {
+    display: none;
+  } 
+  .description {
+    left: 20% !important;
+    width: 61% !important;
+    text-align: center;
+    top: 53%;
+    font-size: 26px;
+    line-height: 40px;
   }
 }
+// @media screen and (max-width: 780) {
+//   .Titles {
+//     left: 2% !important;
+//     width: 94% !important;
+//     text-align: center;
+//     font-size: 25px;
+//     line-height: 49px;
+//     top: 24%;
+// }
+// .description {
+//   left: 2% !important;
+//   width: 89% !important;
+//   text-align: center;
+//   text-align: center;
+//   top: 45%;
+//   font-size: 16px;
+//   line-height: 33px;
+// }
+// .btn {
+//   left: 38% !important;
+// } 
+// }

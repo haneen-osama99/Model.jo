@@ -1,9 +1,9 @@
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './Home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactUsComponent } from './home/contact-us/contact-us.component';
-import { HeroComponent } from './home/hero/hero.component';
-import { AboutusComponent } from './home/aboutus/aboutus.component';
+import { ContactUsComponent } from './Home/contact-us/contact-us.component';
+import { HeroComponent } from './Home/hero/hero.component';
+import { AboutusComponent } from './Home/aboutus/aboutus.component';
 
 const routes: Routes = [
   {
