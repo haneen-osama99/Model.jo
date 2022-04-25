@@ -22,7 +22,6 @@ import {ContentfulService} from './services/contentful.service';
 import {NgPipesModule} from 'ngx-pipes';
 import { ContactUsComponent } from './home/contact-us/contact-us.component';
 import { NgxIndexedDBModule } from 'ngx-indexed-db';
-import { LocalStorageService } from './services/local-storage.service';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -64,7 +63,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
   ],
  
-  providers: [AppService, ContentfulService,LocalStorageService],
+  providers: [AppService, ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

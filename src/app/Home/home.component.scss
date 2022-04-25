@@ -354,11 +354,39 @@ header.jo-header .navbar #navbarSupportedContent .get-quote-lang .get-quote:hove
     cursor: pointer;
   }
 
+.divnav {
+    width: 100%;
+    background-color: white;
+    height: 38em;
+    position: fixed;
+    z-index: 1111;
+    // right: 0;
 
+}
+.mystyle{
+  display: none;
+}
+.nav-size{
+  width: 93%;
+}
+.nav-link{
+  color: black;
+}
 
+.blue-div {
+  background: #007bfc;
+  width: 93%;
+  height: 2.05px;
+}
 @media screen and (min-width: 315px) and (max-width: 430px) {
   body {
-    width: 195%;
+    width: 221%;
 
   }
-}
+} 
+// @media screen and (min-width: 315px) and (max-width: 430px) {
+//  header.jo-header .topbar {
+//     left: 28em;
+
+//   }
+// } 

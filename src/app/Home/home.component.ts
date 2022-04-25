@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   isEnLang: boolean = true;
   data: any = []
   @Input() islang: boolean = true;
-
+  status: boolean = false;
 
   constructor(public router: Router,
     private translate: TranslateService,
@@ -26,25 +26,19 @@ export class HomeComponent implements OnInit {
   }
 
   detectLang() {
-    // this.isEnLang = !this.isEnLang;
-    // this.appService.currentLang.subscribe((res: any) => {
-    //   if (this.isEnLang == false) {
-    //     this.translate.use('ar')
-    //     document.getElementsByTagName("html")[0].dir = "rtl";
-    //   } else {
-    //     this.translate.use('en')
-    //   }
-    // });
     this.appService.currentLang.subscribe(res => this.isEnLang = res == "en")
   }
 
   changeLang(lang: any) {
+  
     this.translate.use(lang);
     this.appService.currentLang.next(lang);
-    document.getElementsByTagName("html")[0].dir = lang == "en" ? "ltr" : "rtl"
+    document.getElementsByTagName("html")[0].dir = lang == "en" ? "ltr" : "rtl";
+    
+
   }
 
- go(){
-    alert("hello")
+  openNavBar(){
+    this.status = !this.status;  
   }
 }

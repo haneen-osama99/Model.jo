@@ -24,7 +24,6 @@ h1{
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
-    /* background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png); */
   }
   .aboutinfo .pattern-2 {
     position: absolute;
@@ -69,8 +68,6 @@ h1{
     padding-top: 64px;
   }
   
-  
-  
   .aboutinfo .about-quote blockquote {
     border-left: 0 dashed;
     color: #999;
@@ -89,13 +86,10 @@ h1{
     top: 15%;
     width: 1px;
   }
-
-
   .about-us .our-team {
   display: table;
   width: 100%;
   min-height: 500px;
-  /* background-image: url(../img/allTeam.jpg); */
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -181,3 +175,42 @@ q:after {
 
   }
 }
+
+
+@media screen and (max-width: 780px) {
+  .about-left h2 {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 21px;
+    width: 40%;
+    line-height: 23px;
+  }
+}
+  @media screen and (max-width: 780px) {
+    .aboutus-img {
+      width: 50%;
+      float: left;
+    }
+  }
+  
+  @media screen and (max-width: 780px) {
+    .about_blockquote {
+      width: 59%;
+      float: right;
+      margin-top: -41%;
+      margin-right: -4%;
+    }  
+  }
+
+  @media screen and (max-width: 428) {
+    .pattern-1 {
+      left: 46px !important;
+  
+    }
+  }
+  .about-us-title {
+    width: 100%;
+  }
+
+

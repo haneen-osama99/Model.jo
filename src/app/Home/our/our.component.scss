@@ -9,7 +9,6 @@
   height: 80px;
   z-index: 1;
   background-repeat: no-repeat;
-//   background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png);
 }
 #our-portfolio .pattern-2 {
   position: absolute;
@@ -86,9 +85,7 @@
   opacity: 0;
   filter: alpha(opacity=0);
 }
-// #our-portfolio .single-work .work-thumb:hover {
-// //   cursor: url(../img/plus.png), auto;
-// }
+
 #our-portfolio .single-work .work-thumb:hover .work-hover {
   background: #003648bf none repeat scroll 0 0;
   opacity: 1;
@@ -122,7 +119,6 @@
   background-color: #e6f2ff;
 }
 #free-consultaion.bgimg-parallax {
-//   background-image: url(../img/img_parallax2.jpg);
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -150,13 +146,7 @@
   transform: translate3d(0px, -50%, 0px) scale(0.7);
 }
 
-// @media screen and (min-width: 315px) and (max-width: 430px) {
-//   .size {
-//     background-color: #f7f7f7;
-//     width: 195%;
 
-//   }
-// }
 
 
 
