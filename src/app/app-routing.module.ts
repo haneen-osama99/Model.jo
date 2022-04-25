@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactUsComponent } from './Home/contact-us/contact-us.component';
 import { HeroComponent } from './Home/hero/hero.component';
 import { AboutusComponent } from './Home/aboutus/aboutus.component';
-import { CourseListComponent } from './course-list/course-list.component';
 
 const routes: Routes = [
   {
@@ -25,9 +24,6 @@ const routes: Routes = [
   },
   {
     path:'' , redirectTo: '/courses' , pathMatch:'full'
-  },
-  {
-    path:'courses' , component: CourseListComponent
   }
 ];
 

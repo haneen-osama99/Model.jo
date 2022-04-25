@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { OurComponent } from '../our/our.component';
 import { AppService } from '../../services/app-service';
 import { Entry } from 'contentful';
 
@@ -21,15 +20,13 @@ export class ServiceComponent implements OnInit {
     this.isEnLang = this.islang;
     this.detectLang();
 
+
   }
-  // ngOnChanges() {
-  //   this.detectLang();
-  // }
+
   getContentItems() {
     this.appService.getService(this.isEnLang ? "en-US" : "ar")
       .then(service => {
         this.dataService = service;
-        console.log(this.dataService)
       })
   }
   getData() {
@@ -59,7 +56,10 @@ export class ServiceComponent implements OnInit {
 
   // });
 
+
+
 }
+
 
 
 

@@ -64,7 +64,7 @@ export class TestimonialsComponent implements OnInit {
   detectLang() {
     this.appService.currentLang.subscribe(res => {
       this.isEnLang = res == "en";
-      console.log(res)
+      // console.log(res)
       this.contentful();
       // this.isEnLang = !this.isEnLang;
       // this.appService.currentLang.subscribe((res: any) => {

@@ -1,8 +1,10 @@
-<owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide *ngFor="let item of hero">
+<section class="size">
+<owl-carousel-o [options]="customOptions" >
+    <ng-template carouselSlide *ngFor="let item of hero" >
         <img class="sliderone" src="{{item.fields.img.fields.file.url}}" style="position: relative;">
-        <h1 class="Titles"> {{item.fields.title}}</h1>
+        <h1 class="Titles container"> {{item.fields.title}}</h1>
         <p class="description">  {{item.fields.description}}</p>
          <button class="btn btn-lg btn-primary btn">{{'hero.button'|translate}}</button>    
     </ng-template>
 </owl-carousel-o>
+</section>

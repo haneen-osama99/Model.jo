@@ -5,7 +5,7 @@
                 <!-- FOOTER WIDGET -->
                 <div id="contact-us" class="contactus col-sm-6">
                     <div class="footer-widget p-2 p-md-5 rounded" style="background-color: #001c35;">
-                        <h2 class="h-title">{{'contact_us.contact'|translate}}</h2>
+                        <h2 class="h-title h-title2">{{'contact_us.contact'|translate}}</h2>
                         <div id="contactform">
                             <form class="row">
                                 <p class="col-6"><input type="text" class="form-control" name="name" id="name"
@@ -29,17 +29,13 @@
                 <div class="col-sm-6">
                     <div class="footer-widget" *ngFor="let cont of contact_us">
                         <!-- https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.514457578544!2d35.864520215161825!3d31.97406658122182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca158dd71cb6f%3A0xa7894d180c5a5f29!2sModel%20Business%20Solutions!5e0!3m2!1sen!2sjo!4v1624869814289!5m2!1sen!2sjo -->
-                        <h6 class="h-title">{{'contact_us.keep_in_touch'|translate}} </h6>
-                        <div >
-                            <!-- {{cont.fields.modelUrl}} -->
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.514457578544!2d35.864520215161825!3d31.97406658122182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca158dd71cb6f%3A0xa7894d180c5a5f29!2sModel%20Business%20Solutions!5e0!3m2!1sen!2sjo!4v1624869814289!5m2!1sen!2sjo"
-                                width="100%" height="480" frameborder="0"
-                                style="border:0;min-height: 230px;height: 100%;" allowfullscreen="">
-                            </iframe>
-                        </div>
-                        <div
-                            class="my-0 my-md-5 d-flex justify-content-center justify-content-md-start ">
+                        <h6 class="h-title">{{'contact_us.keep_in_touch'|translate}}</h6>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.514457578544!2d35.864520215161825!3d31.97406658122182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca158dd71cb6f%3A0xa7894d180c5a5f29!2sModel%20Business%20Solutions!5e0!3m2!1sen!2sjo!4v1624869814289!5m2!1sen!2sjo"
+                            width="100%" height="480" frameborder="0" style="border:0;min-height: 230px;height: 100%;"
+                            allowfullscreen="">
+                        </iframe>
+                        <div class="my-0 my-md-5 d-flex justify-content-center justify-content-md-start ">
                             <div class="">
                                 <ul class=" posts">
                                     <li>
@@ -51,23 +47,26 @@
                                     </li>
                                     <li>
                                         <a href="mailto:info@nextwo.com"> {{'contact_us.email'|translate}}:
-                                           {{cont.fields.modelEmail}}</a>
+                                            {{cont.fields.modelEmail}}</a>
                                     </li>
                                 </ul>
                                 <ul class=" social-links">
                                     <li>
                                         <a href="#" title="Facebook ">
-                                            <fa-icon [styles]="{'color': 'white', 'width':'11px'}" [icon]="faFacebook"></fa-icon>
+                                            <fa-icon [styles]="{'color': 'white', 'width':'11px'}" [icon]="faFacebook">
+                                            </fa-icon>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" title="Twitter">
-                                            <fa-icon [icon]="faTwitter" [styles]="{'color': 'white', 'width':'12px'}"></fa-icon>
+                                            <fa-icon [icon]="faTwitter" [styles]="{'color': 'white', 'width':'12px'}">
+                                            </fa-icon>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" title="Linkedin">
-                                            <fa-icon [icon]="falinkedin" [styles]="{'color': 'white', 'width':'12px'}"></fa-icon>
+                                            <fa-icon [icon]="falinkedin" [styles]="{'color': 'white', 'width':'12px'}">
+                                            </fa-icon>
                                         </a>
                                     </li>
                                 </ul>
@@ -84,10 +83,13 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-sm-12">
-                    <p class="text-center">© {{'contact_us.rights'| translate}}<a href="#">
+                    <p class="text-center">© {{'contact_us.rights'| translate}}
+                        <a href="#">
                             <span class="text-white">
                                 <strong> {{'contact_us.name'| translate}} </strong>
-                            </span></a> 2021</p>
+                            </span>
+                        </a> 2021
+                    </p>
                 </div>
             </div>
         </div>

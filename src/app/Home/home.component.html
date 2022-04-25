@@ -3,8 +3,11 @@
     <option value="ar">arabic</option>
 </select> -->
 
-<!-- <button class="btn" (click)="detectLang()">ar and en</button> --> -->
-<div><button (click)="detectLang()">ar and en</button></div> -->
+<!-- <button class="btn" (click)="detectLang()"> -->
+<!-- ar and en -->
+<!-- </button>  -->
+<!-- <button (click)="detectLang()">ar and en</button>  -->
+
 <header class="jo-header">
     <div class="topbar">
         <div class="container">
@@ -14,7 +17,8 @@
                     <a class="navbar-brand">
                         <img src="assets/data/img/model-logo.png" alt="" class="d-inline-block align-text-top">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                    <button click="openNavBar()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -26,12 +30,11 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#../home/aboutus/aboutus.component.html">{{'navBar.ABOUTUS'|translate}}
+                                <a class="nav-link" href="#about-us">{{'navBar.ABOUT US'|translate}}
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#../home/">{{'navBar.OUR PORTFOLIO'|translate}}</a>
+                                <a class="nav-link" href="#our-portfolio">{{'navBar.OUR PORTFOLIO'|translate}}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">{{'navBar.SERVICES'|translate}}</a>
@@ -48,21 +51,18 @@
                                     (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
         </div>
     </div>
 </header>
-
 <app-hero [islang]="isEnLang"></app-hero>
 <aboutus [islang]="isEnLang"></aboutus>
 <app-our [islang]="isEnLang"></app-our>
 <app-service [islang]="isEnLang"></app-service>
 <app-partners></app-partners>
 <app-testimonials></app-testimonials>
-<!-- <app-testimonials [islang]="isEnLang"></app-testimonials> -->
 <app-contact-us></app-contact-us>
 
 <!-- 

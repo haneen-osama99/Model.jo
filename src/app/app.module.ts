@@ -13,17 +13,18 @@ import { HeroComponent } from './Home/hero/hero.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { ContactUsComponent } from './Home/contact-us/contact-us.component';
 import { PartnersComponent } from './Home/partners/partners.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule} from '@angular/common/http';
 import { OwlModule } from 'ngx-owl-carousel';
 import { AppService } from './services/app-service';
-import { CourseListComponent } from './course-list/course-list.component';
 import {ContentfulService} from './services/contentful.service';
-// import { AyhamComponent } from './ayham/ayham.component';
 import {NgPipesModule} from 'ngx-pipes';
+import { ContactUsComponent } from './Home/contact-us/contact-us.component';
+import { NgxIndexedDBModule } from 'ngx-indexed-db';
+import { LocalStorageService } from './services/local-storage.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SafePipe } from './safe.pipe';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -41,8 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ServiceComponent,
     OurComponent,
     ContactUsComponent,
-    CourseListComponent,
-    
+    SafePipe,    
   ],
   imports: [
     BrowserModule,
@@ -50,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpClientModule,
     CarouselModule ,
     OwlModule,
+    NgxIndexedDBModule,
     NgPipesModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
@@ -64,7 +65,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
   ],
  
-  providers: [AppService, ContentfulService],
+  providers: [AppService, ContentfulService,LocalStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
