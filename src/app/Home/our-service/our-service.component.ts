@@ -19,8 +19,6 @@ export class ServiceComponent implements OnInit {
     this.getData();
     this.isEnLang = this.islang;
     this.detectLang();
-
-
   }
 
   getContentItems() {
@@ -41,23 +39,6 @@ export class ServiceComponent implements OnInit {
       this.getContentItems();
     });
   }
-
-  // detectLang() {
-  //   this.isEnLang=!this.isEnLang;
-  //   this.appService.currentLang.subscribe(res => {
-  //   if(this.isEnLang ==false){
-  //     this.translate.use('ar')
-  //     document.getElementsByTagName("html")[0].dir = "rtl";
-  //   }else {
-  //     this.translate.use('en')
-  //     document.getElementsByTagName("html")[0].dir = "ltr";
-
-  //   }
-
-  // });
-
-
-
 }
 
 

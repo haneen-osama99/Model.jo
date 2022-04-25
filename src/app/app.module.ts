@@ -22,9 +22,10 @@ import {ContentfulService} from './services/contentful.service';
 import {NgPipesModule} from 'ngx-pipes';
 import { ContactUsComponent } from './Home/contact-us/contact-us.component';
 import { NgxIndexedDBModule } from 'ngx-indexed-db';
-import { LocalStorageService } from './services/local-storage.service';
+import { LocalstorageService } from './services/localstorage.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SafePipe } from './safe.pipe';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -65,7 +66,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
   ],
  
-  providers: [AppService, ContentfulService,LocalStorageService],
+  providers: [AppService, ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

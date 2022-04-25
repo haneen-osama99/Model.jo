@@ -1,15 +1,37 @@
-<!--  <select name="" id="" class="form-select " (change)="changeLang($event)" >
-    <option value="en">english</option>
-    <option value="ar">arabic</option>
-</select> -->
 
-<!-- <button class="btn" (click)="detectLang()"> -->
-<!-- ar and en -->
-<!-- </button>  -->
-<!-- <button (click)="detectLang()">ar and en</button>  -->
-
+<div  class="divnav" [ngClass]="status ? 'divnav' : 'mystyle'">
+    
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-size">
+            <li class="nav-item " >
+                <a class="nav-link active" aria-current="page" href="">{{'navBar.HOME'|translate}}
+                </a>
+                <div class="blue-div"></div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about-us">{{'navBar.ABOUT US'|translate}}
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#our-portfolio">{{'navBar.OUR PORTFOLIO'|translate}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">{{'navBar.SERVICES'|translate}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#our-partner">{{'navBar.PARTNERS'|translate}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact-us">{{'navBar.CONTACT US'|translate}}</a>
+            </li>
+            <li class="btn-lang nav-link ">
+                <a style="cursor: pointer;" class="switch-lang "
+                    (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</a>
+            </li>
+        </ul>
+  
+</div>
 <header class="jo-header">
-    <div class="topbar">
+    <div class="topbar" >
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -17,9 +39,9 @@
                     <a class="navbar-brand">
                         <img src="assets/data/img/model-logo.png" alt="" class="d-inline-block align-text-top">
                     </a>
-
-                    <button click="openNavBar()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                   
+                    <button (click)="openNavBar()"  class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -46,7 +68,6 @@
                                 <a class="nav-link" href="#contact-us">{{'navBar.CONTACT US'|translate}}</a>
                             </li>
                             <li class="btn-lang nav-link ">
-                                <!-- <button  class="switch-lang" (click)="detectLang()"  >عربي</button> -->
                                 <a style="cursor: pointer;" class="switch-lang "
                                     (click)="changeLang(isEnLang? 'ar': 'en')">{{'navBar.lang'|translate}}</a>
                             </li>
@@ -65,9 +86,3 @@
 <app-testimonials></app-testimonials>
 <app-contact-us></app-contact-us>
 
-<!-- 
- <select (change)="changeLanguge($event)">
-    <option value="ar">Arabic</option>
-    <option value="en">English</option>
-    </select>   
- -->

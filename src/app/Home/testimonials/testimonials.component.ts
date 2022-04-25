@@ -14,15 +14,12 @@ export class TestimonialsComponent implements OnInit {
   data: any = [];
   active = 0;
   isEnLang: boolean = false;
-  // @Input() islang: boolean = false;
-
   constructor(private appService: AppService, private translate: TranslateService,
     private conetentfulService: ContentfulService) { }
 
   tests: any = [];
   ngOnInit(): void {
     this.gettest();
-    // this.isEnLang = this.islang;
     this.detectLang();
   }
 
@@ -64,17 +61,7 @@ export class TestimonialsComponent implements OnInit {
   detectLang() {
     this.appService.currentLang.subscribe(res => {
       this.isEnLang = res == "en";
-      // console.log(res)
       this.contentful();
-      // this.isEnLang = !this.isEnLang;
-      // this.appService.currentLang.subscribe((res: any) => {
-      //   if (this.isEnLang == false) {
-      //     this.translate.use('ar')
-      //     document.getElementsByTagName("html")[0].dir = "rtl";
-      //   } else {
-      //     this.translate.use('en')
-      //   }
-      // });
     })
   }
 
