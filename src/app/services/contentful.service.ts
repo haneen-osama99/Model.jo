@@ -42,5 +42,14 @@ export class ContentfulService {
         content_type:'testimonials', locale: locale},
         query))
         .then(res => res.items)
+      // return this.client.getEntries({content_type: "testimonials", locale: "ar"})
+      }
+      getContactUs(locale: string, query?:object){
+        return this.client.getEntries(
+          Object.assign({
+          content_type:'contactUs', locale: locale},
+          query ))
+          .then(res => res.items)
       }
   }
+  

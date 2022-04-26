@@ -30,7 +30,7 @@ isEnLang: boolean = false;
   detectLang(){
     this.appService.currentLang.subscribe(res =>{
       this.isEnLang = res == "en";
-      console.log("hh"+res)
+      // console.log("hh"+res)
       this.getContentful();
     })
   }

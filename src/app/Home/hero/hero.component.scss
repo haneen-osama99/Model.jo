@@ -171,9 +171,12 @@ h1,h2,h3{
 }
 @media screen and (max-width: 428px) {
   .Titles {
-left: 59%!important;
-width: 40%!important;
-text-align: center;
+    left: 19% !important;
+    width: 69% !important;
+    text-align: center;
+    top: 12%;
+    font-size: 34px;
+    line-height: 57px;
   }
 }
 

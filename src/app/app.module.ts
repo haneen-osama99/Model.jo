@@ -22,6 +22,9 @@ import {ContentfulService} from './services/contentful.service';
 import {NgPipesModule} from 'ngx-pipes';
 import { ContactUsComponent } from './home/contact-us/contact-us.component';
 import { NgxIndexedDBModule } from 'ngx-indexed-db';
+import { LocalstorageService } from './services/localstorage.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SafePipe } from './safe.pipe';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -40,8 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ServiceComponent,
     OurComponent,
     ContactUsComponent,
-
-    
+    SafePipe,    
   ],
   imports: [
     BrowserModule,
@@ -52,6 +54,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NgxIndexedDBModule,
     NgPipesModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
