@@ -56,11 +56,11 @@ export class PartnersComponent implements OnInit {
    
       },
       740: {
-        items: 2,
+        items: 3,
     
       },
       940: {
-        items: 2,
+        items: 3,
 
       }
     },
