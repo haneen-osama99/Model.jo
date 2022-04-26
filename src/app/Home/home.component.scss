@@ -1,4 +1,4 @@
- @import "bootstrap\dist\css\bootstrap.css";
+@import "bootstrap\dist\css\bootstrap.css";
  @import '../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss';
  @import '../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss';
 
@@ -127,7 +127,7 @@ video {
   padding-bottom: 3rem !important;
 }
 
-/* HTML5 display-role reset for older browsers */
+/ HTML5 display-role reset for older browsers /
 article,
 aside,
 details,
@@ -354,19 +354,18 @@ header.jo-header .navbar #navbarSupportedContent .get-quote-lang .get-quote:hove
     cursor: pointer;
   }
 
-.divnav {
-    width: 100%;
-    background-color: white;
-    height: 38em;
-    position: fixed;
-    z-index: 1111;
-    // right: 0;
+// .divnav {
+//     width: 100%;
+//     background-color: white;
+//     height: 38em;
+//     position: fixed;
+//     z-index: 1111;
+//     // right: 0;
 
- 
-}
-.mystyle{
-  display: none;
-}
+// }
+// .mystyle{
+//   display: none;
+// }
 .nav-size{
   width: 93%;
 }
@@ -385,9 +384,9 @@ header.jo-header .navbar #navbarSupportedContent .get-quote-lang .get-quote:hove
 
   }
 } 
-@media screen and (min-width: 315px) and (max-width: 430px) {
- header.jo-header .topbar {
-    left: 28em;
+// @media screen and (min-width: 315px) and (max-width: 430px) {
+//  header.jo-header .topbar {
+//     left: 28em;
 
-  }
-} 
+//   }
+// } 
