@@ -134,6 +134,7 @@ h1,h2,h3{
   left: 11% !important;
   width: 82% !important;
   text-align: center;
+  font-size: 36px;
 }
 .description{
   position: absolute;
@@ -168,13 +169,44 @@ h1,h2,h3{
   top: 83%;
   left: 42%;
 }
+@media screen and (max-width: 428px) {
+  .Titles {
+    left: 19% !important;
+    width: 69% !important;
+    text-align: center;
+    top: 12%;
+    font-size: 34px;
+    line-height: 57px;
+  }
+}
 
-// @media screen and (min-width: 315px) and (max-width: 430px) {
-//   .owl-theme[_ngcontent-sbs-c19] {
-//     width: 195%!important;
 
-//   }
-// }
+
+
+
+
+@media screen and (max-width: 780px) {
+  .Titles {
+    left: 2% !important;
+    width: 94% !important;
+    text-align: center;
+    font-size: 25px;
+    line-height: 49px;
+    top: 24%;
+}
+.description {
+  left: 2% !important;
+  width: 89% !important;
+  text-align: center;
+  text-align: center;
+  top: 45%;
+  font-size: 16px;
+  line-height: 33px;
+}
+.btn {
+  left: 38% !important;
+} 
+}
 
 @media screen and (max-width: 320px) {
   .Titles {
@@ -197,25 +229,3 @@ h1,h2,h3{
     line-height: 40px;
   }
 }
-// @media screen and (max-width: 780) {
-//   .Titles {
-//     left: 2% !important;
-//     width: 94% !important;
-//     text-align: center;
-//     font-size: 25px;
-//     line-height: 49px;
-//     top: 24%;
-// }
-// .description {
-//   left: 2% !important;
-//   width: 89% !important;
-//   text-align: center;
-//   text-align: center;
-//   top: 45%;
-//   font-size: 16px;
-//   line-height: 33px;
-// }
-// .btn {
-//   left: 38% !important;
-// } 
-// }

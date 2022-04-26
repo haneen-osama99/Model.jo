@@ -2,9 +2,7 @@
     <div class="pattern-layer">
         <div class="pattern-1" style="background-image: url(assets/data/img/pattern-5.png);"></div>
         <div class="pattern-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.5 418.9" style="
-        fill: #f7f8f9;
-    ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.5 418.9" style="fill: #f7f8f9;">
                 <g id="Layer_2" data-name="Layer 2">
                     <g id="Layer_1-2" data-name="Layer 1">
                         <path class="cls-1"
@@ -26,16 +24,16 @@
         <div class="container" *ngFor="let item of aboutus">
             <div class="row" >
                 <div class="col-sm-12 col-md-6 col-lg-6 size about-us-title" style="width: 57%;">
+                    <h2 class="col-sm-12 wow animate__animated animate__fadeInDown about-us-title " data-wow-duration="2s"
+                    data-wow-delay="0s" >
+                    {{item.fields.subTitle}}
+                </h2>
                     <div class="about-left">
-                        <h2 class="col-sm-12 wow animate__animated animate__fadeInDown about-us-title " data-wow-duration="2s"
-                            data-wow-delay="0s">
-                            {{item.fields.subTitle}}
-                        </h2>
-                            <img src="{{item.fields.aboutUsImage.fields.file.url}}" class="aboutus-img">
+                            <img class="aboutus-img" src="{{item.fields.aboutUsImage.fields.file.url}}" >
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 size parg">
-                    <div class="about-quote wow animate__animated animate__fadeInLeft about_blockquote" data-wow-duration="2s"
+                <div class="col-sm-12 col-md-6 col-lg-6 size" style="width: 43%;">
+                    <div class="about-quote  about_blockquote wow animate__animated animate__fadeInLeft " data-wow-duration="2s"
                         data-wow-delay="1.4s">
                         <blockquote>
                             {{item.fields.paragraphone}}

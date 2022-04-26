@@ -26,7 +26,6 @@ h1 {
   width: 80px;
   height: 80px;
   background-repeat: no-repeat;
-  /* background-image: url(http://el.commonsupport.com/newwp/topika/wp-content/themes/metlife/assets/images/shape/pattern-5.png); */
 }
 
 .aboutinfo .pattern-2 {
@@ -47,7 +46,7 @@ h1 {
   font-weight: 300;
   text-align: center;
   margin: 0 0 15px;
-  // width: 43%;
+  width: 43%;
 }
 
 .aboutinfo .about-left h2 strong {
@@ -77,8 +76,6 @@ h1 {
   padding-top: 64px;
 }
 
-
-
 .aboutinfo .about-quote blockquote {
   border-left: 0 dashed;
   color: #999;
@@ -99,12 +96,10 @@ h1 {
   width: 1px;
 }
 
-
 .about-us .our-team {
   display: table;
   width: 100%;
   min-height: 500px;
-  /* background-image: url(../img/allTeam.jpg); */
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -135,7 +130,12 @@ h1 {
 }
 
 .about-us-title {
-  width: 100%;
+  // width: 100%;
+  color: #666;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 15px;
 }
 
 .aboutinfo .about-quote {
@@ -207,51 +207,86 @@ q:after {
   }
 }
 
-@media screen and (max-width: 428) {
-  .pattern-1 {
-    left: -9% !important;
-
-  }
-}
-
-@media screen and (max-width: 1024) {
-  .about-left h2 {
-    width: 89% !important;
-    line-height: 28px;
-    text-align: center;
-    font-size: 18px;
-}
-  }
-
-  // .aboutus-img {
-  //   width: 40%;
-  // }
-
-  // .about_blockquote {
-  //   width: 59%;
-  //   float: right;
-  //   margin-top: -41%;
-  //   margin-right: -4%;
-  // }
-
-@media screen and (max-width: 780) {
-  .about-left h2 {
-    font-size: 17px;
+@media screen and (max-width: 775px) {
+  .about-us-title {
+    width: 54% !important;
+    font-size: 15px;
     font-weight: 300;
     text-align: center;
-    margin: 0 0 21px;
-    width: 40%;
-    line-height: 23px;
-  }
-
-  .aboutus-img {
-    width: 40%;
+    margin: 0 0 15px;
   }
 
   .about_blockquote {
-    width: 59%;
+    position: relative;
+    width: 60%;
+    left: 44%;
+    top: -42%;
+
+  }
+
+  .aboutus-img {
+    width: 70%;
+    float: left;
+  }
+
+}
+
+// @media screen and (max-width: 428) {
+//   .pattern-1 {
+//     left: 46px !important;
+
+//   }
+// }
+// .about-us-title {
+//   width: 100%;
+// }
+@media screen and (max-width: 428px) {
+  .about-us-title {
+    width: 83% !important;
+    font-size: 24px;
+    line-height: 41px;
+    /* text-align: center; */
     float: right;
-    margin-top: -41%;
-    margin-right: -4%;
-  }  
+    margin-right: -2%;
+
+  }
+
+  .aboutus-img {
+    width: 123% !important;
+  }
+
+  .pattern-1 {
+    left: -8% !important;
+    width: 100%;
+    margin-top: 32%;
+    position: relative;
+    left: -4%;
+  }
+
+  .about-quote {
+    width: 100%;
+    margin-top: 32%;
+    position: relative;
+    left: -4%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutus-img {
+    width: 69% !important;
+    position: relative;
+    left: -14%;
+  }
+
+  .about-us-title {
+    width: 61% !important;
+  }
+
+  .about_blockquote {
+    width: 121%;
+    top: -70%;
+    position: relative;
+    left: 117%;
+
+  }
 }

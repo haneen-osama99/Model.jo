@@ -2,7 +2,6 @@ import { AppService } from './../../services/app-service';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { ContentfulService } from 'src/app/services/contentful.service';
-import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-partners',

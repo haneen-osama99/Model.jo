@@ -6,8 +6,6 @@
     "PrjectNameEn":"Excellent IT environment",
     "ProjectDescAr":"توفير المكاتب المجهزة بالكامل لفريقك مع الأجهزة التقنية والمرونة في الزيادة أو التقليل في عدد المكاتب حسب الحاجة",
     "ProjectDescEn":"Providing fully equipped offices for your team with technical devices and the flexibility to increase or decrease the number of offices as needed"
-
-
     },
     {
         "ProjectImage":"../../../assets/data/img/s5.jpg",
@@ -15,7 +13,7 @@
         "PrjectNameEn":"Business Analysis and Quality Assurance",
         "ProjectDescAr":" جمع المتطلبات ومراجعة الجودة و نمذجة البيانات للوصول لأنسب الطرق في تطوير الاعمال ",
         "ProjectDescEn":"Requirements gathering, quality review And data modeling to reach the most appropriate approach in business development"
-   },
+    },
         
    {
     "ProjectImage":"../../../assets/data/img/s4.jpg",
