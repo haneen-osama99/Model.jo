@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./Home.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
+
 export class HomeComponent implements OnInit {
   isEnLang: boolean = true;
   data: any = []
