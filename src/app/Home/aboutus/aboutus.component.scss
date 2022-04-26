@@ -207,7 +207,7 @@ q:after {
   }
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 768px) {
   .about-us-title {
     width: 54% !important;
     font-size: 15px;
@@ -218,17 +218,19 @@ q:after {
 
   .about_blockquote {
     position: relative;
-    width: 60%;
-    left: 44%;
-    top: -42%;
-
+    width: 61% !important;
+    left: 41% !important;
+    top: -57% !important;
   }
 
   .aboutus-img {
     width: 70%;
-    float: left;
+    margin-left: -8%;
   }
+  .pattern-1 {
+    top: 2% !important;
 
+  }
 }
 
 // @media screen and (max-width: 428) {
@@ -240,9 +242,9 @@ q:after {
 // .about-us-title {
 //   width: 100%;
 // }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 320px) {
   .about-us-title {
-    width: 83% !important;
+    width: 50% !important;
     font-size: 24px;
     line-height: 41px;
     /* text-align: center; */
