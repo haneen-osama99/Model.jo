@@ -189,7 +189,9 @@ q:after {
   content: "";
   content: none;
 }
-
+.divTitle{
+  width: 57%;
+}
 .line-sperator {
   height: 0;
   margin: 21px 0 42px;
@@ -227,51 +229,54 @@ q:after {
     width: 70%;
     margin-left: -8%;
   }
+
   .pattern-1 {
     top: 2% !important;
 
   }
 }
 
-// @media screen and (max-width: 428) {
-//   .pattern-1 {
-//     left: 46px !important;
+@media screen and (max-width: 1450) {
+  .si {
+    width: 43px !important;
 
-//   }
-// }
-// .about-us-title {
-//   width: 100%;
-// }
-@media screen and (max-width: 320px) {
-  .about-us-title {
-    width: 50% !important;
-    font-size: 24px;
-    line-height: 41px;
-    /* text-align: center; */
-    float: right;
-    margin-right: -2%;
-
-  }
-
-  .aboutus-img {
-    width: 123% !important;
-  }
-
-  .pattern-1 {
-    left: -8% !important;
-    width: 100%;
-    margin-top: 32%;
-    position: relative;
-    left: -4%;
-  }
-
-  .about-quote {
-    width: 100%;
-    margin-top: 32%;
-    position: relative;
-    left: -4%;
   }
 }
+
+.about-us-title {
+  width: 100%;
+}
+
+// @media screen and (max-width: 320px) {
+//   .aboutus_Title {
+//     margin-top: 20%;
+//   }
+
+//   .about-us-title {
+//     width: 15% !important;
+//   }
+
+//   // .about-left {
+//   //   width: 110% !important;
+//   // }
+
+//   .pattern-1 {
+//     left: -8% !important;
+//     width: 100%;
+//     margin-top: 32%;
+//     position: relative;
+//     left: -4%;
+//   }
+
+//   .about-quote {
+//     width: 100% !important;
+//     margin-top: 61%;
+//     position: relative;
+//     left: -4% !important;
+//     line-height: 40px;
+//     font-size: 37px;
+//   }
+// }
 
 @media screen and (max-width: 1024px) {
   .aboutus-img {

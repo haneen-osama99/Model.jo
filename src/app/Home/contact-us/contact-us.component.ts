@@ -40,12 +40,7 @@ export class ContactUsComponent implements OnInit {
 
       });
 
-    // this.modelUrl.subscribe(res => this.createURL())
   }
 
-  // i: number = 0;
-  // createURL() {
-  // console.log( this.contact_us)
-  // return this.contact_us[0].fields.modelUrl;
-  // }
+
 }
