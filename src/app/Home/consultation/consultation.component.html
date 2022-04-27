@@ -1,0 +1,19 @@
+<section id="free-consultaion" class="bgimg-parallax py-5  py-md-6">
+    <div class="container-fluid px-5 ">
+        <div class="container " *ngFor="let item of dataService">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="h1 wow animate__ animate__fadeInDown animated" data-wow-duration="1s" data-wow-delay="0s" style="visibility: visible; animation-duration: 1s; animation-delay: 0s; animation-name: fadeInDown;">
+                        {{item.fields.title}}
+                    </div>
+                    <div class="line-sperator mx-auto"></div>
+                    <p class="wow animate__ animate__fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInDown;">
+                        {{item.fields.subTitle}}
+                    </p>
+                    <a class="btn btn-lg btn-primary mt-5 wow animate__ animate__fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.8s" href="#contact-us" role="button" style="visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInDown;">{{item.fields.button}} </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -25,6 +25,7 @@ import { NgxIndexedDBModule } from 'ngx-indexed-db';
 import { LocalstorageService } from './services/localstorage.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SafePipe } from './safe.pipe';
+import { ConsultationComponent } from './home/consultation/consultation.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -41,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     TestimonialsComponent,
     ServiceComponent,
+    ConsultationComponent,
     OurComponent,
     ContactUsComponent,
     SafePipe,    

@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
     this.appService.currentLang.next(lang);
     document.getElementsByTagName("html")[0].dir = lang == "en" ? "ltr" : "rtl";
     
-
+    document.getElementsByTagName("nav-size")[0].classList.add("nav-width")
   }
 
   openNavBar(){
