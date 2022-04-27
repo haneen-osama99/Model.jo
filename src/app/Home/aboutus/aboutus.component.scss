@@ -140,7 +140,7 @@ h1 {
 
 .aboutinfo .about-quote {
   padding-bottom: 64px;
-  padding-top: 64px;
+  padding-top: 56px;
 }
 
 .aboutinfo .about-quote blockquote {
@@ -211,7 +211,7 @@ q:after {
 
 @media screen and (max-width: 768px) {
   .about-us-title {
-    width: 54% !important;
+    width: 83% !important;
     font-size: 15px;
     font-weight: 300;
     text-align: center;
@@ -220,14 +220,10 @@ q:after {
 
   .about_blockquote {
     position: relative;
-    width: 61% !important;
-    left: 41% !important;
-    top: -57% !important;
-  }
-
-  .aboutus-img {
-    width: 70%;
-    margin-left: -8%;
+    width: 100% !important;
+    left: -7% !important;
+    top: -1% !important;
+    width: 92%;
   }
 
   .pattern-1 {
@@ -236,57 +232,37 @@ q:after {
   }
 }
 
-@media screen and (max-width: 1450) {
-  .si {
-    width: 43px !important;
 
-  }
-}
-
-.about-us-title {
-  width: 100%;
-}
-
-// @media screen and (max-width: 320px) {
-//   .aboutus_Title {
-//     margin-top: 20%;
-//   }
-
-//   .about-us-title {
-//     width: 15% !important;
-//   }
-
-//   // .about-left {
-//   //   width: 110% !important;
-//   // }
-
-//   .pattern-1 {
-//     left: -8% !important;
-//     width: 100%;
-//     margin-top: 32%;
-//     position: relative;
-//     left: -4%;
-//   }
-
-//   .about-quote {
-//     width: 100% !important;
-//     margin-top: 61%;
-//     position: relative;
-//     left: -4% !important;
-//     line-height: 40px;
-//     font-size: 37px;
-//   }
-// }
-
-@media screen and (max-width: 1024px) {
-  .aboutus-img {
-    width: 69% !important;
+@media screen and (max-width: 320px) {
+  .about-us-title{
+    font-size: 29px;
     position: relative;
-    left: -14%;
+    top: 0%;
+  }
+  .aboutus-img{
+    width: 286% !important;
+    left: 4%;
+    /* margin-top: 10%; */
+    line-height: 55px;
+  }
+  .about-quote{
+    width: 94% !important;
+    top: -2% !important;
+    font-size: 28px !important;
+    left: 7px !important;
+    line-height: 45px;
+  }
+  }
+
+@media screen and (max-width: 325px) {
+  .aboutus-img {
+   
+    width: 100% !important;
+    position: relative;
   }
 
   .about-us-title {
-    width: 61% !important;
+    width: 100%!important;
   }
 
   .about_blockquote {
