@@ -14,7 +14,6 @@ export class AppComponent {
   constructor(public localStorage: LocalstorageService, private updates: SwUpdate) {
     updates.available.subscribe(res => updates.activateUpdate().then(() => document.location.reload()))
   }
-
   add() {
     let txtvalue = (<HTMLInputElement>document.getElementById("txtvalue")).value;
     this.localStorage.add("myName", txtvalue).then(res => {
@@ -23,6 +22,4 @@ export class AppComponent {
       }
     })
   }
-
-
 }

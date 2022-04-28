@@ -1,4 +1,3 @@
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { OurComponent } from './home/our/our.component';

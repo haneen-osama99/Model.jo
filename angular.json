@@ -34,14 +34,14 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/font-awesome/css/font-awesome.css" 
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": [],
             "optimization": {
               "scripts": true,
               "styles": {
-                  "minify": true,
-                  "inlineCritical": false
+                "minify": true,
+                "inlineCritical": false
               },
               "fonts": true
           },
@@ -128,11 +128,8 @@
               "src/assets/css/main.css",
               "src/assets/css/main.rtl.css",
               "src/assets/js/animate-min.css"
-
             ],
-            "scripts": [
-            ]
-            
+            "scripts": []
           }
         }
       }
