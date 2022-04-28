@@ -48,7 +48,7 @@
 
             <div [ngClass]="status ? 'd-block' : 'd-none'">
 
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-size">
+                <ul id="nav-bar-home" class="navbar-nav ms-auto mb-2 mb-lg-0 nav-size">
                     <li class="nav-item ">
                         <a class="nav-link active" aria-current="page" href="">{{'navBar.HOME'|translate}}
                         </a>
@@ -80,6 +80,9 @@
         </div>
     </div>
 </header>
+<a class="scroll-top scroll-to-target open" href="#hero" data-target="html">
+    <span class="fa fa-arrow-up"></span>
+</a>
 <app-hero [islang]="isEnLang"></app-hero>
 <aboutus [islang]="isEnLang"></aboutus>
 <app-our [islang]="isEnLang"></app-our>

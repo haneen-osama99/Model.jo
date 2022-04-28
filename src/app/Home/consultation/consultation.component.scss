@@ -24,3 +24,10 @@
     max-width: 90px;
     border-radius: 6px;
 }
+
+@media screen and (min-width: 768px){
+.py-md-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+}

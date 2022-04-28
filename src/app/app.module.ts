@@ -22,10 +22,11 @@ import {ContentfulService} from './services/contentful.service';
 import {NgPipesModule} from 'ngx-pipes';
 import { ContactUsComponent } from './home/contact-us/contact-us.component';
 import { NgxIndexedDBModule } from 'ngx-indexed-db';
-import { LocalstorageService } from './services/localstorage.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SafePipe } from './safe.pipe';
 import { ConsultationComponent } from './home/consultation/consultation.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -64,7 +65,13 @@ export function HttpLoaderFactory(http: HttpClient) {
           deps: [HttpClient]
       },
       defaultLanguage:'en'
-  })
+  }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
 
   ],
  
