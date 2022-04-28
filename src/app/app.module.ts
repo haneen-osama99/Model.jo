@@ -1,3 +1,4 @@
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TestimonialsComponent } from './Home/testimonials/testimonials.component';
@@ -26,9 +27,7 @@ import { LocalstorageService } from './services/localstorage.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SafePipe } from './safe.pipe';
 import { ConsultationComponent } from './Home/consultation/consultation.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
