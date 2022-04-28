@@ -26,6 +26,7 @@ import { LocalstorageService } from './services/localstorage.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SafePipe } from './safe.pipe';
 import { ConsultationComponent } from './Home/consultation/consultation.component';
+import { environment } from '../environments/environment';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -65,9 +66,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
       defaultLanguage:'en'
   })
-
-  ],
- 
+],
   providers: [AppService, ContentfulService],
   bootstrap: [AppComponent]
 })

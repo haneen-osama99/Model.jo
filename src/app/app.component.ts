@@ -13,15 +13,13 @@ export class AppComponent {
 
   constructor(public localStorage: LocalstorageService) {
   }
-
-  add(){
+  
+  add() {
     let txtvalue = (<HTMLInputElement>document.getElementById("txtvalue")).value;
-    this.localStorage.add("myName", txtvalue).then(res=>{
-      if(res){
+    this.localStorage.add("myName", txtvalue).then(res => {
+      if (res) {
         alert("insert successfully")
       }
     })
   }
-
-
 }
