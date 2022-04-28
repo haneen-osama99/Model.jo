@@ -16,19 +16,12 @@ export class AppComponent {
 
   add(){
     let txtvalue = (<HTMLInputElement>document.getElementById("txtvalue")).value;
-    console.log(txtvalue);
-    // debugger
     this.localStorage.add("myName", txtvalue).then(res=>{
       if(res){
         alert("insert successfully")
       }
     })
   }
-  get() {
 
-  }
-  delete() {
-
-  }
 
 }

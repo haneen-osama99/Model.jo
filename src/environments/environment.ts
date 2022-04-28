@@ -7,8 +7,9 @@ export const environment = {
   contentful:{
     spaceId: 'm92hdre9vqch' ,
     token:'Me6CKaw73YqlfTbFeIPSCvUcQUDNiI354ofwSrM6G4U'
-  }
-};
+  },
+}
+
 
 /*
  * For easier debugging in development mode, you can import the following file

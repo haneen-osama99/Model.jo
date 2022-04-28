@@ -179,6 +179,7 @@
     width: 40px;
     height: 40px;
 }
+
 .qoutSec {
     border: 1px solid #e2e2e2;
     padding: 20px;
@@ -186,18 +187,14 @@
     position: relative;
     border-radius: 8px;
 }
-.qoutSec small {
-    position: absolute;
-    bottom: -26px;
-    background-color: #f7f7f7;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
+
 .img-wrapper {
     max-width: 120px;
     max-height: 120px;
     position: relative;
 }
+
 .line-sperator {
     height: 0;
     margin: 21px 0 42px;
@@ -206,4 +203,26 @@
     height: 4px;
     max-width: 90px;
     border-radius: 6px;
+}
+
+.max93 {
+    max-width: 93%;
+}
+
+.qoutSec small {
+    position: absolute;
+    bottom: 5px;
+    background-color: #f7f7f7;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.custum-small {
+    background-color: #f7f7f7;
+    position: relative;
+    top: -2px;
+    width: 21%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
 }
