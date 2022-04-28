@@ -12,10 +12,11 @@
                 <h2 class="wow animate__animated animate__fadeInDown about-us-title " data-wow-duration="2s"
                     data-wow-delay="0s">
                     {{item.fields.subTitle}}
-                    <div class="about-left">
-                        <img class="aboutus-img" src="{{item.fields.aboutUsImage.fields.file.url}}">
-                    </div>
+                   
                 </h2>
+                <div class="about-left col-sm-6 col-md-6 col-lg-6">
+                    <img class="aboutus-img" src="{{item.fields.aboutUsImage.fields.file.url}}">
+                </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 size si" style="width: 43%;">
                 <div class="about-quote  about_blockquote wow animate__animated animate__fadeInLeft "
@@ -23,7 +24,7 @@
                     <blockquote class="about-quote">
                         {{item.fields.paragraphone}}
                     </blockquote>
-                    <blockquote class="about-quote" >
+                    <blockquote class="about-quote">
                         {{item.fields.paragraphtwo}}
                     </blockquote>
                 </div>

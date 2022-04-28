@@ -89,8 +89,16 @@ export class AppService {
                 }        )
         .then(res => res.items);
       }
-
+      getConsultation(locale: string): Promise<Entry<any>[]> {
+        return this.client.getEntries({
+          content_type: 'consultation',
+          locale: locale
+                }        )
+        .then(res => res.items);
+      }
 }
+
+
 
 function marked(md: string) {
     throw new Error("Function not implemented.");
