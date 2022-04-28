@@ -42,4 +42,7 @@ export class HomeComponent implements OnInit {
   openNavBar(){
     this.status = !this.status;  
   }
+  goUp(){
+    document.getElementById('')
+  }
 }

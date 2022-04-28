@@ -1,9 +1,7 @@
-import { ServiceWorkerModule } from '@angular/service-worker';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TestimonialsComponent } from './Home/testimonials/testimonials.component';
-import { OurComponent } from './Home/our/our.component';
-import { ServiceComponent } from './Home/our-service/our-service.component';
+import { TestimonialsComponent } from './home/testimonials/testimonials.component';
+import { OurComponent } from './home/our/our.component';
+import { ServiceComponent } from './home/our-service/our-service.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,7 +12,7 @@ import { HeroComponent } from './home/hero/hero.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { PartnersComponent } from './Home/partners/partners.component';
+import { PartnersComponent } from './home/partners/partners.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule} from '@angular/common/http';
 import { OwlModule } from 'ngx-owl-carousel';
@@ -23,11 +21,12 @@ import {ContentfulService} from './services/contentful.service';
 import {NgPipesModule} from 'ngx-pipes';
 import { ContactUsComponent } from './home/contact-us/contact-us.component';
 import { NgxIndexedDBModule } from 'ngx-indexed-db';
-import { LocalstorageService } from './services/localstorage.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SafePipe } from './safe.pipe';
-import { ConsultationComponent } from './Home/consultation/consultation.component';
+import { ConsultationComponent } from './home/consultation/consultation.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
