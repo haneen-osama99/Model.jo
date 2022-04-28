@@ -263,8 +263,15 @@ header.jo-header .navbar #navbarSupportedContent .get-quote-lang .get-quote:hove
     height: 35px !important;
   }
 }   
+@media screen and (max-width: 1024px) {
+  #navbarSupportedContent{
+    margin-left: 1% !important;
+
+  }
+}
   #navbarSupportedContent {
     margin-top: 20px;
+    margin-left: 16%;
   }
 
   .nav-item {
