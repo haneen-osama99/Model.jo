@@ -1,3 +1,4 @@
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TestimonialsComponent } from './Home/testimonials/testimonials.component';
@@ -27,7 +28,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SafePipe } from './safe.pipe';
 import { ConsultationComponent } from './Home/consultation/consultation.component';
 import { environment } from '../environments/environment';
-
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
@@ -65,8 +65,16 @@ export function HttpLoaderFactory(http: HttpClient) {
           deps: [HttpClient]
       },
       defaultLanguage:'en'
-  })
-],
+  }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
+
+  ],
+ 
   providers: [AppService, ContentfulService],
   bootstrap: [AppComponent]
 })
